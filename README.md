@@ -12,3 +12,4 @@ To run:
     1)pdflatex main.tex
     2)biber main
     3)pdflatex main.tex
+    4)sage main.sagetex.sage
