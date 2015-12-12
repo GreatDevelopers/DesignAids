@@ -1,7 +1,16 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-
+*~
+*.aux
+*.pdf
+*.py
+*.sage
+*.sout
+*.scmd
+*.toc
+*.tex_tmp
+sage-plots-for-main.tex
 # C extensions
 *.so
 

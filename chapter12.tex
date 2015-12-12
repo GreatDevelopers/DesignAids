@@ -1,118 +1,144 @@
-\chapter{Individual spread Footing}
-\section{Introduction}
-Clause $34$ of the Code gives the provisions governing the design of reinforced concrete footings. These provisions are similar to those given by the ACI code. The design of footings in accordance with IS :456—2000 differs from that by the old code in the following aspects.
+\chapter{Individual Spread Footing}
+
+\section{Introduction} Clause 34 of the Code gives the provisions
+governing the design of reinforced concrete footings.  These provisions are
+similar to those given by the ACI code. The design of footings in
+accordance with IS : 456 -- 2000 differs from that by
+
+ ***  the old code  should some from cite as IS 456 : 1964 ***
+
+in the
+following aspects.
 \begin{enumerate}
-\item Perimeter shear stress must not exceed the allowable value. This aspect was not
-given in the old code. But it is similar to the familiar concept of punching shear
-stress.
 
-\item Bond-stress-criterion was given in the old code, but it is omitted in the new code.
-Instead, development length of footing bars is required to be checked at the sections
-where bending moment is critical.
+\item Perimeter shear stress must not exceed the allowable value. This
+aspect was not given in the old code. But it is similar to the familiar
+concept of punching shear stress.
 
-\item 25\% excess pressure on edge of footing was allowed by the old code when a footing
- is eccentrically loaded. This concession is withdrawn by the new Code, thereby
-adding to the cost of eccentrically loaded footings.
+\item Bond-stress-criterion was given in the old code, but it is omitted in
+the new code. Instead, development length of footing bars is required to be
+checked at the sections where bending moment is critical.
+
+\item 25\% excess pressure on edge of footing was allowed by the old code
+when a footing is eccentrically loaded. This concession is withdrawn by
+the new Code, thereby adding to the cost of eccentrically loaded footings.
 \end{enumerate}
-
 The Code requires footings to be designed for the following limit states.
 
 \begin{enumerate}
 \item Perimeter shear
 \item Bending moment
 \item Beam shear
-\item  Development length of footing bars.
-\item Development length of column bars.
+\item Development length of footing bars
+\item Development length of column bars
 \end{enumerate}
 
-\subsection{Types of individual Footings}
-Individual spread footings can be either square or rectangular in plan, the area of a rectangular footing with sides A and B being given by,
+\section{Types of individual Footings} Individual spread footings can be
+either square or rectangular in plan, the area of a rectangular footing with
+sides $A$ and $B$ being given by,
+\begin{equation}
+\label{eq:footingArea}
+A \times B = \frac{p}{q}
+\end{equation}
+where $P$ is the column load in $kN$ and $p$ denotes the net allowable soil
+pressure in $kN/m^2$. In this development, self-weight of footing may not
+be considered. This involves only a small error in that, the weight of the
+concrete of footing is assumed here to be approximately equal to the weight
+of the earth displaced by it. Further, it is assumed here that the soil
+pressure under the footing is uniform. This is a reasonable assumption as
+discussed elsewhere. The individual spread footings can be of the following
+types (Fig.  12.1).
+
+With the area of footing known from equation \ref{eq:footingArea},
+dimensions $A$ and $B$ are easily finalise.  The only dimension of footing
+which remains to be known is the depth ($D$) of the footing.  A common way
+of design of footing is to assume D, rather generously, with a view to
+reduce steel area as well as to help provide fixity to the column base, in
+the order to be close to the assumptions made in the frame analysis of
+superstructure.
+
+\section{Design for Perimeter Shear} Depth of footing is fixed from the
+consideration of perimeter shear stress which depends on concrete quality,
+being independent of types of reinforce steel. For a square footing of
+uniform depth with a square column of side $a$ (Fig 12.1 a), perimeter shear
+$\tau_{v}$ is given by
+\begin{equation}
+\label{eq:perimeterShearStress}
+\tau_{v} = \frac{V_{u}} {{b_{0}} \times d} 
+=\frac{1.5 \times S_{p}} {4(a + d) \times d} 
+\end{equation}
+where 
+\begin{equation}
+\label{eq:perimeterShearForce}
+\quad S_{p} = P - p \times (a + d)^2
+\end{equation}
+and $b_0$ = Perimeter of criticle closed section.
+
+The allowable perimeter shear stress $\quad{\tau_{a}}$ (clause 31.6.3 of
+the code) is given by,
 
 \begin{equation}
-\label{eq:(1.1)}
-A\times B =\frac{p}{q} (cm^2)
+\label{eq:allowable2DShearStress}
+\tau_{a} = k_{s} . \tau_{c} = k_{s} \times 0.25 \sqrt{f_{ck}}
 \end{equation}
+where, $f_{ck}$ is to be put in $N/mm^2$.
 
-where $P$ is the column load in $kN$ and p denotes the net allowable soil pressure in $kN/cm2$. In this development, self-weight of footing may not be considered. This involves only a small error in that, the weight of the concrete of footing is assumed here to be approximately equal to the weight of the earth displaced by it. Further, it is assumed here that the soil pressure under the footing is uniform. This is a reasonable assumption as discussed elsewhere. The individual spread footings can be of the following types (Fig. 12.1).
-
-With the area of footing known from equation \ref{eq:(1.1)}, dimensions A and B are easily finalise. The only dimension of footing which remains to be known in the depth (D) of the footing. A common way of design of footing is to assume D, rather generously, with a view to reduce steel area as well as to help provide fixity to the column base, in the order to be close to the assumptions made in the frame analysis of superstructure.
-
-\section{Design for Perimeter Shear}
-Depth of footing is fixed from the consideration of perimeter shear stress which depends on concrete quality, being independent of types of reinforce steel. For a square footing of uniform depth with a square column of side a (Fig 12.1 a), perimeter shear $tv$ is given by
-
-\begin{equation}
-\label{eq:(1.2)}
-T_v = \frac{V_u} {{b_0}.d} 
-=\frac{1.5 S_p} {4(a+d)d} 
-\end{equation}
-
-Where 
-
-\begin{equation}
-\label{eq:(1.3)}
-\quad S_p = P-p . (a+d)^2
-\end{equation}
-
-\begin{equation}
-\label{eq:(1.4)}
-T_a=k_s.T_c=k_s 0.25 \sqrt{fck}
-\end{equation}
-
-and $b_0$ = Perimeter of criticle closed section
-\par The allowable perimeter shear stress
-$\quad{T_a}$  
-(clause 31.6.3 of the code) is given by,
-
-Where, $fck$ is to be put in $N/m^2$ .\\
- $ks$ = 1.0 for square columns and also for rectangular with aspect ratio  $\left( \frac{b}{a} \right)$ $\leq {2.0}$. For the condition $T_v$ = $Ta$, equation \ref{eq:(1.2)} and \ref{eq:(1.4)} give,
-
- \begin{sagesilent}
-         var('a,A,d,f,c,k,p')
-         z1=(1-((a/A)**2)-(2*(a/A)*(d/A))-(d/A)**2)/((a/A)*(d/A)+(d/A)**2)
-         z2=(.067*(f*c*k)**(1/2))/p
- \end{sagesilent}
-
- \begin{equation}
-         \sage{z1}=\sage{z2}=\sage{k}
- \end{equation}
-
- For a square sloped footing with a square column of side a (Fig. 12.2 b),
- 
-\begin{equation}
-\label{eq:(1.5)}
-T_v=\frac{V_u}{b_0.d "}
-=\frac{15.0\quad{S_p}}{4(a+d)d"}.\alpha-k(say)
-\end{equation}
-
-Assuming $d$ = $\alpha.d$ , the condition $T_v=T_a$  gives,
-
-                                                                       
- \begin{equation}                                                       
-         \sage{z1}=\sage{z2}=\sage{k}                                   
- \end{equation}  
-
-
-$\alpha = 1.0$ for footings of Types ($a$), ($b$) and ($d$) (Fig. 12.1), while $\alpha$ < 1.0 for sloped footings of
-Type ($c$). The overall depth of footing is given by,
+$k_{s}$ = 1.0 for square columns and also for rectangular with aspect ratio
+$\left( \dfrac{b}{a} \right) \leq {2.0}$. For the condition $\tau_{v} =
+\tau_{a}$, equation (\ref{eq:perimeterShearStress}) and
+(\ref{eq:allowable2DShearStress}) give,
 
 \begin{sagesilent}
-        var('D,d,c,phi')
-        z=d+c+phi
+  var('a,A,d,fck,p,k')
+  z1=(1-(a/A)**2-2*(a/A)*(d/A)-(d/A)**2)/((a/A)*(d/A)+(d/A)**2)
+  
+  val=.067
+  val.n(digits=4)
+  z2=(fck)**(1/2)/p
 \end{sagesilent}
 
 \begin{equation}
-        \label{eq:(1.8)}
-        \sage{D}=\sage{z}
+  \sage{z1}= \sage{val.n(digits=2)}\sage{z2}=\sage{k}
 \end{equation}
-Here, $d$ is regarded as an average value for either steel layer. For sloped footings (Fig. 12.2 $b$), simple geometry gives,
+For a square sloped footing with a square column of side $a$ (Fig. 12.2 b),
+ 
+\begin{equation}
+\label{eq:(1.5)}
+\tau_{v} = \frac{V_{u}}{b_{0} \times d''}
+=\frac{1.5 \times {S_p}}{4(a + d) \times d"}
+\end{equation}
+Assuming $d''$ = $ \alpha . d $, the condition $\tau_{v} = \tau_{a}$ gives,
+
+\begin{equation}    
+ \sage{z1}=\sage{val.n(digits=2)}\sage{z2}=\sage{k}   
+\end{equation}  
+$\alpha = 1.0$ for footings of Types ($a$), ($b$) and ($d$) (Fig. 12.1),
+while $\alpha$ $<$ 1.0 for sloped footings of Type ($c$). The overall depth
+of footing is given by,
+
+\begin{sagesilent}
+  var('D,d,c,phi')
+  z=d+c+phi
+\end{sagesilent}
+
+\begin{equation}
+  \label{eq:(1.8)}
+  \sage{D}=\sage{z}
+\end{equation}
+Here, $d$ is regarded as an average value for either steel layer. For sloped
+footings (Fig.  12.2 $b$), simple geometry gives,
 
 \begin{equation}
 \label{eq:(1.9)}
-\alpha=\frac{d''}{d}=\frac{\quad{D_m}}{d}+\frac{D-\quad{D_m}}{d}.\frac{\left( 1-\frac{a}{A}-\frac{d}{A}\right)}{\left( 1-\frac{a}{A}\right)}
+\alpha = \frac{d''}{d} = \frac{{D_m}}{d} + \frac{D - {D_m}}{d}.
+\frac{\left(1 - \frac{a}{A} - \frac{d}{A}\right)}
+{\left(1 - \frac{a}{A}\right)}
 \end{equation}
-
-Chart 12.1 is developed on the basis of equations (12.5) and (12.7) and it applies to both
-uniformly deep and sloped square footings. It can also be used for rectangular footings with rectangular columns by using average values of a and A, provided an equal overhang is left on all sides of column, which requires,
+Chart 12.1 is developed on the basis of equations (12.5) and (12.7) and it
+applies to both uniformly deep and sloped square footings. It can also be
+used for rectangular footings with rectangular columns by using average
+values of $a$ and $A$, provided an equal overhang is left on all sides of
+column, which requires,
 
 \begin{sagesilent}                                                      
         var('b,a,B,A')                                                
@@ -123,10 +149,26 @@ uniformly deep and sloped square footings. It can also be used for rectangular f
 \begin{align}
        \sage{z}=\sage{z2} 
 \end{align} 
-Solution of numerical examples gives an idea that it is possible to develop thumb rules for fixing depth of footings. It may be noted that there is no dire need of exactness in fixing the value of depth of footing, only it should be more than adequate for the actions imposed on a footing. Table 12.1, based on equation (12.5), is developed for footings of Types ($a$) and ($b$) (Fig.12.1).
 
- It gives values of $\frac{D}{A}$ for various practicable values of $p$. It is seen that, for safety in beam shear, these values are  to be increased by 10\% in case of steel types $Fe$ $415$ and $Fe$ $ 500$. For sloped and stepped footings (Types c and d), the depth of footing given by Table 12.1 may be increased by 20\%. The depth at the free end of a footing may be restricted to 15 cm, which is the minimum prescribed by the Code for spread footings.
+Solution of numerical examples gives an idea that it is possible to develop
+thumb rules for fixing depth of footings. It may be noted that there is no
+dire need of exactness in fixing the value of depth of footing, only it
+should be more than adequate for the actions imposed on a footing. Table
+12.1, based on equation (12.5), is developed for footings of Types ($a$) and
+($b$) (Fig.12.1).
+
+It gives values of $\frac{D}{A}$ for various practicable values of $p$. It
+is seen that, for safety in beam shear, these values are to be increased by
+10\% in case of steel types $Fe 415$ and $Fe 500$. For sloped and
+stepped footings (Types $c$ and $d$), the depth of footing given by Table 12.1
+may be increased by 20\%. The depth at the free end of a footing may be
+restricted to 15 cm, which is the minimum prescribed by the Code for spread
+footings.
  
+
+%% ====  End of My correction  ==============
+
+
  \section{Design for Moment and Beam Shear} 
  Section 1-1 in Fig. 12.3 is the critical  Section for bending moment. The bending moment
 for full width $B$ is given by,
