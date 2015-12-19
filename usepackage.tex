@@ -1,6 +1,22 @@
 \usepackage{geometry}
- \geometry{ a4paper, total={170mm,257mm},left=20mm,top=20mm}
- \usepackage{sagetex}
+\geometry{ a4paper,total={170mm,257mm}, left=20mm, top=20mm}
+\usepackage{sagetex}
 \usepackage{fancyhdr}
 \usepackage{amsmath}
-
+\usepackage{subcaption}
+\usepackage{enumerate}
+\usepackage{pgfplotstable}
+\usepackage{booktabs}
+\newcommand{\code}[3][IS]{#2:#3}
+\newcommand{\figmacro}[1] {Fig. #1}
+\newcommand{\equmacro}[1] {Equation #1}
+\newcommand{\chartmacro}[1] {Chart #1}
+\newcommand{\tablemacro}[1] {Table #1}
+\newcommand{\Fefouronefivemacro}[1] {$Fe$ 415 #1}
+\newcommand{\Fefivezerozeromacro}[1] {$Fe$ 500 #1}
+\newcommand{\Fetwofivezeromacro}[1] {$Fe$ 250 #1}
+\DeclareCaptionType[fileext=loc]{chart}[Chart][List of Charts]
+\usepackage{graphicx}
+\usepackage[autostyle]{csquotes}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{chapter12.bib}
