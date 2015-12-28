@@ -1,23 +1,25 @@
-%----------------------main document start------------------%
+%-------------------------main document start------------------%
 \chapter{Individual Spread Footing}
-\section{Introduction} Clause 34 of the  \citetitle{IS2000} gives the provisions
-governing the design of reinforced concrete footings.  These provisions are
-similar to those given by the \citeauthor{aci1981aci}. The design of footings in
-accordance with \citetitle{IS2000} differs from that by
-the \citetitle{IS1964} in the following aspects.
+\section{Introduction} Clause 34 of the  \citetitle{IS2000} gives the
+provisions governing the design of reinforced concrete footings.  These
+provisions are similar to those given by the \citeauthor{aci1981aci}. 
+The design of footings in accordance with \citetitle{IS2000} differs
+from that by the \citetitle{IS1964} in the following aspects.
 
 \begin{enumerate}[I]
 \item Perimeter shear stress must not exceed the allowable value. This
-aspect was not given in the \citetitle{IS1964}. But it is similar to the familiar
-concept of punching shear stress.
+aspect was not given in the \citetitle{IS1964}. But it is similar to
+the familiar concept of punching shear stress.
 
-\item Bond-stress-criterion was given in the \citetitle{IS1964}, but it is omitted in
-the \citetitle{IS2000}. Instead, development length of footing bars is required to be
-checked at the sections where bending moment is critical.
+\item Bond-stress-criterion was given in the \citetitle{IS1964}, but it
+is omitted in the \citetitle{IS2000}. Instead, development length of
+footing bars is required to be checked at the sections where bending
+moment is critical.
 
-\item 25\% excess pressure on edge of footing was allowed by the \citetitle{IS1964}
-when a footing is eccentrically loaded. This concession is withdrawn by
-the \citetitle{IS2000}, thereby adding to the cost of eccentrically loaded footings.
+\item 25\% excess pressure on edge of footing was allowed by the 
+\citetitle{IS1964} when a footing is eccentrically loaded. This 
+concession is withdrawn by the \citetitle{IS2000}, thereby adding to 
+the cost of eccentrically loaded footings.
 \end{enumerate}
 The Code requires footings to be designed for the following limit states.
 
@@ -29,19 +31,23 @@ The Code requires footings to be designed for the following limit states.
 \item Development length of column bars
 \end{enumerate}
 
-\section{Types of Individual Footings} Individual spread footings can be either square or rectangular in plan, the area of a rectangular footing with sides $A$ and $B$ being given by,
+\section{Types of Individual Footings} Individual spread footings can be
+either square or rectangular in plan, the area of a rectangular footing
+with sides $A$ and $B$ being given by,
 
 \begin{equation}
 \label{eq:footingArea}
 A \times B = \frac{P}{p}
 \end{equation}
-where $P$ is the column load in $kN$ and $p$ denotes the net allowable soil
-pressure in $kN/m^2$. In this development, self-weight of footing may not
-be considered. This involves only a small error in that, the weight of the
-concrete of footing is assumed here to be approximately equal to the weight
-of the earth displaced by it. Further, it is assumed here that the soil
-pressure under the footing is uniform. This is a reasonable assumption as
-discussed elsewhere. Various types of  individual spread footings are shown in \figmacro \ref{Types-of-individual-spread-footing}.
+where $P$ is the column load in $\kNmacro$ and $p$ denotes the net allowable
+soil pressure in $\kNmsquaremacro$. In this development, self-weight of footing
+may not be considered. This involves only a small error in that, the
+weight of the concrete of footing is assumed here to be approximately
+equal to the weight of the earth displaced by it. Further, it is assumed
+here that the soil pressure under the footing is uniform. This is a 
+reasonable assumption as discussed elsewhere. Various types of 
+individual spread footings are shown in
+\figmacro \ref{Types-of-individual-spread-footing}.
 %---------------figures--------------------------%
 \begin{figure}
 \begin{subfigure}[b]{0.5\textwidth}
@@ -52,7 +58,8 @@ discussed elsewhere. Various types of  individual spread footings are shown in \
   %
   \begin{subfigure}[b]{0.5\textwidth}
     \includegraphics[width=\textwidth]{images/fig2292.png}
-    \caption{Sloped footing (slope starting from $D/2$ away from the edge of column)}
+    \caption{Sloped footing (slope starting from $D/2$ away from the
+     edge of column)}
     \label{Slopedfooting}
   \end{subfigure}
  %
@@ -72,17 +79,18 @@ discussed elsewhere. Various types of  individual spread footings are shown in \
 \end{figure}
 %-----------------end figure-----------------------%
 With the area of footing known from \equmacro \ref{eq:footingArea},
-dimensions $A$ and $B$ are easily finalise.  The only dimension of footing
-which remains to be known is the depth ($D$) of the footing.  A common way
-of design of footing is to assume D, rather generously, with a view to
-reduce steel area as well as to help provide fixity to the column base, in
-order to be close to the assumptions made in the frame analysis of
-superstructure.
+dimensions $A$ and $B$ are easily finalise.  The only dimension of 
+footing which remains to be known is the depth ($D$) of the footing.  
+A common way of design of footing is to assume D, rather generously,
+with a view to reduce steel area as well as to help provide fixity to
+the column base, in order to be close to the assumptions made in the
+frame analysis of superstructure.
 
-\section{Design for Perimeter Shear} Depth of footing is fixed from the
-consideration of perimeter shear stress which depends on concrete quality,
-being independent of types of reinforce steel. For a square footing of
-uniform depth with a square column of side $a$ (\figmacro \ref{critical perimeter 1-1-1-1}), perimeter shear stress
+\section{Design for Perimeter Shear} Depth of footing is fixed from 
+the consideration of perimeter shear stress which depends on concrete
+quality, being independent of types of reinforce steel. For a square 
+footing of uniform depth with a square column of side $a$
+(\figmacro \ref{critical perimeter 1-1-1-1}), perimeter shear stress
 $\tau_{v}$ is given by
 
 \begin{equation}
@@ -112,7 +120,8 @@ the code) is given by,
   %
   \begin{subfigure}[b]{0.5\textwidth}
     \includegraphics[width=\textwidth]{images/fig2302.png}
-    \caption{Section of sloped footing showing reduced depth ${d'}$ for perimeter shear}
+    \caption{Section of sloped footing showing reduced depth ${d'}$
+     for perimeter shear}
     \label{sectionslopefooting}
   \end{subfigure}
 \caption{Perimeter shear for square footing.}
@@ -125,39 +134,44 @@ the code) is given by,
 \label{eq:allowable2DShearStress}
 \tau_{a} = k_{s} . \tau_{c} = k_{s} \times 0.25 \sqrt{f_{ck}}
 \end{equation}
-where, $f_{ck}$ is to be put in $N/mm^2$.
+where, $f_{ck}$ is to be put in $\Nmmsquaremacro$.
 
-$k_{s}$ = 1.0 for square columns and also for rectangular with aspect ratio
-$\left( \dfrac{b}{a} \right) \leq {2.0}$. For the condition $\tau_{v} =
-\tau_{a}$, \equmacro (\ref{eq:perimeterShearStress}) and
+$k_{s}$ = 1.0 for square columns and also for rectangular with aspect 
+ratio $\left( \dfrac{b}{a} \right) \leq {2.0}$. For the condition 
+$\tau_{v} = \tau_{a}$, \equmacro (\ref{eq:perimeterShearStress}) and
 (\ref{eq:allowable2DShearStress}) give,
 
 \begin{sagesilent}
-  var('a,A,d,fck,p,k')
+  var('a,A,d,fck,p,k,consst,alpha')
+  consst = .067
+  consst = consst.n(digits=3)
   z1=(1-(a/A)**2-2*(a/A)*(d/A)-(d/A)**2)/((a/A)*(d/A)+(d/A)**2)
-  z2=(.067*fck**(1/2))/p
+  z2=(consst*fck**(1/2)*alpha)/p
 \end{sagesilent}
 
 \begin{equation}
   \label{eq:areafck}
-  \sage{z1}=\sage{z2}=\sage{k}
+  \sage{z1}=\sage{z2}=\sage{k} (say)
 \end{equation}
-For a square sloped footing with a square column of side $a$ (\figmacro \ref{sectionslopefooting}),
+For a square sloped footing with a square column of side $a$
+(\figmacro \ref{sectionslopefooting}),
  
 \begin{equation}
 \label{eq:shearSquare}
 \tau_{v} = \frac{V_{u}}{b_{0} \times d''}
 =\frac{1.5 \times {S_p}}{4(a + d) \times d''}
 \end{equation}
-Assuming $d''$ = $ \alpha . d $, the condition $\tau_{v} = \tau_{a}$ gives,
+Assuming $d''$ = $ \alpha . d $, the condition $\tau_{v} = \tau_{a}$
+ gives,
 
 \begin{equation} 
  \label{eq:areafckSloped}
   \sage{z1}=\sage{z2}=\sage{k}                                   
 \end{equation} 
-$\alpha = 1.0$ for footings of Types ($a$), ($b$) and ($d$) (\figmacro \ref{Types-of-individual-spread-footing}),
-while $\alpha$ $<$ 1.0 for sloped footings of Type ($c$). The overall depth
-of footing is given by,
+$\alpha = 1.0$ for footings of Types ($a$), ($b$) and ($d$) 
+(\figmacro \ref{Types-of-individual-spread-footing}),
+while $\alpha$ $<$ 1.0 for sloped footings of Type ($c$). The overall
+depth of footing is given by,
 
 \begin{sagesilent}
   var('D,d,c,phi')
@@ -168,8 +182,9 @@ of footing is given by,
   \label{eq:depth-cover}
   \sage{D}=\sage{z}
 \end{equation}
-Here, $d$ is regarded as an average value for either steel layer. For sloped
-footings  (\figmacro \ref{sectionslopefooting}), simple geometry gives,
+Here, $d$ is regarded as an average value for either steel layer. For
+sloped footings  (\figmacro \ref{sectionslopefooting}), simple geometry
+gives,
 
 \begin{equation}
 \label{eq:shape}
@@ -177,41 +192,47 @@ footings  (\figmacro \ref{sectionslopefooting}), simple geometry gives,
 \frac{\left(1 - \dfrac{a}{A} - \dfrac{d}{A}\right)}
 {\left(1 - \dfrac{a}{A}\right)}=\dfrac{(c+\phi)}{d}
 \end{equation}
-\chartmacro \ref{Dummy chart} is developed on the basis of \equmacro (\ref{eq:areafck}) and (\ref{eq:areafckSloped}) and it
-applies to both uniformly deep and sloped square footings. It can also be
-used for rectangular footings with rectangular columns by using average
-values of $a$ and $A$, provided an equal overhang is left on all sides of
-column, which requires,
+\chartmacro \ref{Dummy chart} is developed on the basis of
+\equmacro (\ref{eq:areafck}) and (\ref{eq:areafckSloped}) and it
+applies to both uniformly deep and sloped square footings. It can also
+be used for rectangular footings with rectangular columns by using 
+average values of $a$ and $A$, provided an equal overhang is left on
+all sides of column, which requires,
 
 \begin{sagesilent}                                                      
         var('b,a,B,A')                                                
         z=b-a
-        z2=B-A                                                    
+        z2=B-A                                                   
 \end{sagesilent}
 
 \begin{equation}
   \label{eq:equaloverhang}
            \sage{z}=\sage{z2} 
 \end{equation}
-Solution of numerical examples gives an idea that it is possible to develop
-thumb rules for fixing depth of footings. It may be noted that there is no
-dire need of exactness in fixing the value of depth of footing, only it
-should be more than adequate for the actions imposed on a footing. \tablemacro \ref{chaptertable}, based on \equmacro (\ref{eq:areafck}), is developed for footings of Types ($a$) and
-($b$) (\figmacro \ref{Types-of-individual-spread-footing}).It gives values of $D/A$ for various practicable values of $p$. It
-is seen that, for safety in beam shear, these values are to be increased by
-10\% in case of steel types \Fefouronefivemacro and \Fefivezerozeromacro. For sloped and
-stepped footings (Types $c$ and $d$), the depth of footing given by \tablemacro \ref{chaptertable}
-may be increased by 20\%. The depth at the free end of a footing may be
-restricted to 150 mm, which is the minimum prescribed by the ~\citetitle{IS2000} for spread
+Solution of numerical examples gives an idea that it is possible to
+develop thumb rules for fixing depth of footings. It may be noted that
+there is no dire need of exactness in fixing the value of depth of
+footing, only it should be more than adequate for the actions imposed
+on a footing. \tablemacro \ref{chaptertable}, based on
+\equmacro (\ref{eq:areafck}), is developed for footings of Types ($a$) 
+and ($b$) (\figmacro \ref{Types-of-individual-spread-footing}).It gives
+values of $D/A$ for various practicable values of $p$. It is seen that,
+for safety in beam shear, these values are to be increased by 10\% in 
+case of steel types \Fefouronefivemacro and \Fefivezerozeromacro. For 
+sloped and stepped footings (Types $c$ and $d$), the depth of footing 
+given by \tablemacro \ref{chaptertable} may be increased by 20\%. The
+depth at the free end of a footing may be restricted to 150 mm, which 
+is the minimum prescribed by the ~\citetitle{IS2000} for spread
 footings.
  
 
-%% ====  End of My correction  ==============
+%%==================  End of My correction  ========================%
 
 
- \section{Design for Moment and Beam Shear} 
- Section 1-1 in \figmacro \ref{critical-sections-for-bending-moment-and-beam-shear-in-footing} is the critical  section for bending moment. The bending moment
-for full width $B$ is given by,
+\section{Design for Moment and Beam Shear} 
+Section 1-1 in \figmacro \ref{critical-sections-for-bending-moment-and-beam-shear-in-footing} 
+is the critical  section for bending moment.
+The bending moment for full width $B$ is given by,
 
 \begin{sagesilent}                                                      
         var('p,B,A,a,k,N,cm')                                                
@@ -222,15 +243,19 @@ for full width $B$ is given by,
         \label{eq:criticalMoment}
         M_{1-1}=\sage{z}
 \end{equation}
-For footings of uniform depth and also stepped footings, the concrete compression zone is
-rectangular and charts of Chapter 2 are used to calculate the required area of steel. But for slopped footings, the concrete compression zone is of a trapezoidal shape and \chartmacro $4.1$ of Chapter $4$ is to be used for finding steel area. 
-\chartmacro 4.1 can be used for both uniformly deep $(\gamma = 0)$ and sloped footings.
-The calculated steel area should not be less than the 
-speciﬁed minimum steel area (\tablemacro 11.4 of Chapter 11)
-for spread footings which may be regarded as slabs for this purpose.
+For footings of uniform depth and also stepped footings, the concrete
+compression zone is rectangular and charts of Chapter 2 are used to 
+calculate the required area of steel. But for slopped footings, the 
+concrete compression zone is of a trapezoidal shape and \chartmacro 
+$4.1$ of Chapter $4$ is to be used for finding steel area. \chartmacro 
+4.1 can be used for both uniformly deep $(\gamma = 0)$ and sloped
+footings. The calculated steel area should not be less than the 
+speciﬁed minimum steel area (\tablemacro 11.4 of Chapter 11) for spread
+footings which may be regarded as slabs for this purpose.
 
-Section 2-2 in \figmacro \ref{critical-sections-for-bending-moment-and-beam-shear-in-footing} is the critical section for beam shear.
-The shear force and moment at section 2'-2' rai for the full width of footing is given by,
+Section 2-2 in \figmacro \ref{critical-sections-for-bending-moment-and-beam-shear-in-footing}
+is the critical section for beam shear. The shear force and moment at
+section ${2'-2'}$ for the full width of footing is given by,
 
 \begin{sagesilent}
 var('p,B,b,A,a,d')                                                
@@ -267,10 +292,13 @@ z2=(p*(B/2))*(((A-a)/2)-d)**2
     \caption{Section of sloped footing}
     \label{sectionofslopedfooting}
   \end{subfigure}
-\caption{Critical sections for bending moment and beam shear in footings.}
+\caption{Critical sections for bending moment and beam shear in 
+footings.}
 \label{critical-sections-for-bending-moment-and-beam-shear-in-footing}
-\end{figure}%--------------------end figure-------------------%
-Beam shear stress $\sage{tau_v}$ for footings of uniform depth and stepped footings is given by,
+\end{figure}
+%--------------------end figure-------------------%
+Beam shear stress $\sage{tau_v}$ for footings of uniform depth and 
+stepped footings is given by,
 
 \begin{equation}
          \label{eq:shearstress22}
@@ -278,13 +306,16 @@ Beam shear stress $\sage{tau_v}$ for footings of uniform depth and stepped footi
 \end{equation}
 where, $$b = \text{B for uniformaly deep footings,}$$ 
 $$= \text{a for stepped footing} (\figmacro \ref{steppedfooting})$$
-For sloped footings, clause 40.1.1 of the  \citetitle{IS2000} gives, (-ve sign applies here),
+For sloped footings, clause 40.1.1 of the  \citetitle{IS2000} gives,
+(-ve sign applies here),
 
 \begin{equation}
          \label{eq:clause40.1.1}
         \sage{tau_v}=\frac{\quad{V_u}}{b'd'}-\frac{M_u}{b'd'^2}.tan\beta
 \end{equation}
-where b', d' are shown in \figmacro \ref{Planofslopedfooting} and \figmacro \ref{sectionofslopedfooting} and ${M_u}$ is the ultimate moment at section 2-2.
+where b', d' are shown in \figmacro \ref{Planofslopedfooting} and 
+\figmacro \ref{sectionofslopedfooting} and ${M_u}$ is the ultimate
+moment at section 2-2.
 
 \begin{sagesilent}
         var('D_m,D,a,A,d')
@@ -332,23 +363,37 @@ For Type (b), \figmacro \ref{Slopedfooting} gives,
         var('V_v')
         z2=V_v/(b*d)
 \end{sagesilent}
-The calculated value of $\sage{tau_v}$ must not exceed the allowable stress $\sage{tau_a}$, as shear reinforcement is just not provided in individual footings for reasons of economy, the same as in solid slabs. The allowable stress in concrete solid slabs $\sage{tau_a}$ is given by,
+The calculated value of $\sage{tau_v}$ must not exceed the allowable 
+stress $\sage{tau_a}$, as shear reinforcement is just not provided in
+individual footings for reasons of economy, the same as in solid slabs.
+The allowable stress in concrete solid slabs $\sage{tau_a}$ is given by,
 
 \begin{equation}
          \label{eq:concretesolidslabs}
         \sage{tau_a}=\sage{z}
 \end{equation}
-$\sage{tau_c}$ is given by \tablemacro 19 of the  \citetitle{IS2000} depending on the steel area provided for moment at the critical section 2-2 (the minimum value of $\sage{tau_c}$ is assumed for $p_t $$\leq$$ 0.15$ in \tablemacro 19 and
+$\sage{tau_c}$ is given by \tablemacro 19 of the  \citetitle{IS2000} 
+depending on the steel area provided for moment at the critical section
+2-2 (the minimum value of $\sage{tau_c}$ is assumed for 
+$p_t $$\leq$$ 0.15$ in \tablemacro 19 and
 
 $$\begin{array}{l@{}l}
-&{}k=1.0 \text{ for } D \geq 300 \text{mm}\\
-&{}=1.1 \text{ for } D = 250 \text{mm}\\   
-&{}=1.2 \text{ for } D = 200 \text{mm}\\
-&{}=1.25 \text{ for } D = 175 \text{mm}\\   
-&{}=1.30 \text{ for } D \leq 150 \text{mm}  
+&{}k=1.0 \text{ for } D \geq 300 \cmmacro\\
+&{}=1.1 \text{ for } D = 250 \cmmacro\\   
+&{}=1.2 \text{ for } D = 200 \cmmacro\\
+&{}=1.25 \text{ for } D = 175 \cmmacro\\   
+&{}=1.30 \text{ for } D \leq 150 \cmmacro
 \end{array}$$
-Normally, depth of footing given for perimeter shear (\chartmacro \ref{Dummy chart}) is more than adequate
-to satisfy the requirements of beam shear. But when steel type  \Fefouronefivemacro and \Fefivezerozeromacro are used as reinforcement beam shear may govern the depth of footing. For stepped footings, additional checks for moment and beam shear are required to be made for the portion of the footing of depth $D_m$ (\figmacro \ref{steppedfooting}). When section ${1'-1'}$ is the critical section for moment and section ${2'-2'}$ is that for beam shear (\figmacro \ref{steppedfooting}), expressions for moment and shear are given as,
+Normally, depth of footing given for perimeter shear
+(\chartmacro \ref{Dummy chart}) is more than adequate
+to satisfy the requirements of beam shear. But when steel type 
+\Fefouronefivemacro and \Fefivezerozeromacro are used as reinforcement
+beam shear may govern the depth of footing. For stepped footings,
+additional checks for moment and beam shear are required to be made for
+the portion of the footing of depth $D_m$ (\figmacro \ref{steppedfooting}).
+When section ${1'-1'}$ is the critical section for moment and section
+${2'-2'}$ is that for beam shear (\figmacro \ref{steppedfooting}), 
+expressions for moment and shear are given as,
 
 \begin{equation}
          \label{eq:momentandshear1-1}
@@ -358,14 +403,18 @@ to satisfy the requirements of beam shear. But when steel type  \Fefouronefivema
 \begin{equation}                                             \label{eq:momentandshear2-2}
         S_{2'-2'}=p.B\bigg[\frac{(A-a')^2}{B}-d_m\bigg]                                 
 \end{equation}
-For finding steel area, \chartmacro 4.1 (with $\gamma = 0$), may be used, as the concrete compression zone is of a rectangular shape of width equal to B. Shear stress $\tau_v$ is given by,
+For finding steel area, \chartmacro 4.1 (with $\gamma = 0$), may be used,
+as the concrete compression zone is of a rectangular shape of width equal 
+to B. Shear stress $\tau_v$ is given by,
 
 \begin{equation}
         \label{eq:Shearstress}
         \sage{tau_v}=\sage{z2}=\frac{1.5S_{2-2}}{B.d_m}
 \end{equation}
-and it must not exceed $\tau_a$ given by \equmacro (\ref{eq:concretesolidslabs}), failing which depth $D_m$ should be suitably increased.
-Normally $D_m = 0.30$ $D$ to $0.50$ $D$ is kept in stepped footings and perimeter shear stress can be checked to be safe by using first principles.
+and it must not exceed $\tau_a$ given by \equmacro (\ref{eq:concretesolidslabs}),
+failing which depth $D_m$ should be suitably increased. Normally
+$D_m = 0.30$ $D$ to $0.50$ $D$ is kept in stepped footings and perimeter 
+shear stress can be checked to be safe by using first principles.
 
 %------------------figure-------------------------------%
 \begin{figure}
@@ -386,132 +435,408 @@ Normally $D_m = 0.30$ $D$ to $0.50$ $D$ is kept in stepped footings and perimete
 
 %------------------end figure---------------------------%
 \section{Development Length of Bars}
-Column dowel bars should extend into footings for a distance equal to the development
-length (\tablemacro 11.3 of Chapter 11) of column bars in compression (or in tension when moment in column is large). With the clause 26.2.2.2 of the Code, column bars can always be adequately anchored in the footing, whatever be the depth of footing. 
+Column dowel bars should extend into footings for a distance equal to 
+the development length (\tablemacro 11.3 of Chapter 11) of column bars
+in compression (or in tension when moment in column is large). With the
+clause 26.2.2.2 of the Code, column bars can always be adequately
+anchored in the footing, whatever be the depth of footing. 
 
 \begin{sagesilent}
         z=((A-a)/2)-4                    
 \end{sagesilent}
 
-For development length of footing bars, there should be adequate bar length available $(y)$, either straight or bent-up or both measured from the face of column. Referring to \figmacro\ref{uniformallydeepfooting}, for sloped or uniformly deep footings,
+For development length of footing bars, there should be adequate bar
+length available $(y)$, either straight or bent-up or both measured from
+the face of column. Referring to \figmacro\ref{uniformallydeepfooting},
+for sloped or uniformly deep footings,
 
 \begin{equation} 
         \label{eq:uniformallydeepfooting}
         y= \sage{z} >L_d (tension)
 \end{equation}
-where 40 $mm$ is taken as clear cover over ends of bars in footings. If \equmacro \ref{eq:uniformallydeepfooting} is not  satisfied, there are two ways to tackle this problem :
+where 40 $\cmmacro$ is taken as clear cover over ends of bars in footings. If 
+\equmacro \ref{eq:uniformallydeepfooting} is not  satisfied, there are
+two ways to tackle this problem :
 
 \begin{enumerate}
 \item bend bars up, as shown dotted in \figmacro \ref{uniformallydeepfooting}
 \item choose smaller diameter for bars.
 \end{enumerate}
 
-For stepped footings \figmacro \ref{stepedfoting}, the available straight length of bars beyond the critical
-section ${1' - 1'}$ is,
+For stepped footings \figmacro \ref{stepedfoting}, the available
+straight length of bars beyond the critical section ${1' - 1'}$ is,
                                                           
-\begin{equation}                                                           \label{eq:criticalsection1-1}
+\begin{equation}                            
+       \label{eq:criticalsection1-1}
         y'= \frac{(A-a')}{2}-4 >L_d (tension)                                      
 \end{equation}
-Normally, full steel area required at section $1 — 1$ is provided throughout and the steel strength $\sigma_s$ at section 1’ - 1’ may be less than its maximum value of 0.87 $f_y$. The value of $L_d$ (tension) should be calculated for the appropriate value of $\sigma_s$.
+Normally, full steel area required at section $1 — 1$ is provided 
+throughout and the steel strength $\sigma_s$ at section 1’ - 1’ may be
+less than its maximum value of 0.87 $f_y$. The value of $L_d$ (tension)
+should be calculated for the appropriate value of $\sigma_s$.
 
 \section{Selection of Type of Footings}
-Footings of uniform depth (Type $a$), though commonly used in practice for reasons of ease in design and construction, are the costliest. These consume more concrete quantity (about 25\% to 45\%) than that by sloped footings. This type is suitable only for small footings with overall depth being restricted to, say, 30 cm.
+Footings of uniform depth (Type $a$), though commonly used in practice
+for reasons of ease in design and construction, are the costliest. These
+consume more concrete quantity (about 25\% to 45\%) than that by sloped
+footings. This type is suitable only for small footings with overall
+depth being restricted to, say, 300 $\cmmacro$.
 
-For footings of intermediate size, sloped footings with slope starting from $\dfrac{D}{2}$ away from the edge of column
-(Type $b$), are quite suitable. This type is quite economical giving concrete and steel quantities quite reasonable in comparison with other types. This type is easy to design as well as to execute. This type is recommended for most individual footings encountered in buildings with overall depth greater than 30 $cm$. The depth at the free end of footing may be kept at 15 $cm$, the specified minimum given by the Code. The depth ($D$) of this type of footing is kept the same as that for footings of uniform depth.
+For footings of intermediate size, sloped footings with slope starting
+from $\dfrac{D}{2}$ away from the edge of column (Type $b$), are quite 
+suitable. This type is quite economical giving concrete and steel 
+quantities quite reasonable in comparison with other types. This type 
+is easy to design as well as to execute. This type is recommended for
+most individual footings encountered in buildings with overall depth
+greater than 300 $\cmmacro$. The depth at the free end of footing may be kept 
+at 150 $\cmmacro$, the specified minimum given by the \citetitle{IS2000}. The depth ($D$) of
+this type of footing is kept the same as that for footings of uniform
+depth.
 
-For large-sized footings, sloped footings with the slope starting from the edge of column
-(Type $c$) or stepped footings (Type $d$) are preferred to other types, as these give the least quantities for concrete and steel consumption. The stepped footings give the least steel quantity, while the sloped footings (Type $c$), give the least concrete quantity. The depth for these types of footings works out to be about 20\% more than that for footings of uniform depth. Stepped footings are a little cumbersome in construction, while the sloped footings are easier in execution, albeit a little more labour-intensive than the footings of uniform depth.
+For large-sized footings, sloped footings with the slope starting from 
+the edge of column (Type $c$) or stepped footings (Type $d$) are
+preferred to other types, as these give the least quantities for
+concrete and steel consumption. The stepped footings give the least
+steel quantity, while the sloped footings (Type $c$), give the least
+concrete quantity. The depth for these types of footings works out to
+be about 20\% more than that for footings of uniform depth. Stepped
+footings are a little cumbersome in construction, while the sloped 
+footings are easier in execution, albeit a little more labour-intensive 
+than the footings of uniform depth.
 
-%-----------------------------------first numerical example--------------------%
+%====================== first numerical example ======================%
 
 \section{Examples}
-\textbf{ Example 12.1. Square footing of Uniform Depth (Type a).}\\
-\textbf{ Given:}
-$$P = 1000kN$$
-$$p = .02 kN/cm^2$$
-$$a = 40 cm$$
-$$f_{ck} = 15 N/mm^2$$
-$$f_y = 415 N/mm^2$$
+\textbf{Example 12.1. Square footing of Uniform Depth (Type a).}\\
+\textbf{Given:}
+\begin{sagesilent}
+  var('PP,pp,aa,ff_ck,ff_y')
+  PP = 1000
+  pp = .02
+  aa = 40
+  ff_ck = 15
+  ff_y = 415
+\end{sagesilent}
+
+$$P = \sage{PP} \kNmacro$$
+$$p = \sage{pp.n(digits=0)} \kNmsquaremacro$$
+$$a = \sage{aa} \cmmacro$$
+$$f_{ck} = \sage{ff_ck} \Nmmsquaremacro$$
+$$f_y = \sage{ff_y} \Nmmsquaremacro$$
 \textbf{Solution:}
+
 \begin{enumerate}
 \item \textbf{Dimensions of footing}\\
-        \equmacro \ref{eq:footingArea} gives,
-        $$A^2=\frac{1000}{0.02}=50,000 cm^2$$
-        $$A=223.6 cm$$
-Provided $225 \times 225$ base and
-        $$p = \frac{100}{225 \times 225} = 0.01975 kN/cm^2$$
-        \tablemacro \ref{chaptertable} gives for p = 0.02, and steel \Fefouronefivemacro,
-        $$\frac{D}{A} = \frac{1}{4.5} \text{ or } D = \frac{225}{4.5}=50 \text{cm}$$
-\item   \textbf{Check for perimeter shear}
-        \chartmacro \ref{Dummy chart} gives for,
-        $$k=\frac{0.67\sqrt{15}\times 1.0}{0.01975}=13.14$$
-        $$\frac{a}{A}=\frac{40}{225}=0.18$$
-        $$\frac{d}{A} = 0.18$$
-        $$d=0.18 \times 225 = 40.5$$
-\equmacro \ref{eq:depth-cover} gives with $c = 4.0 cm,\phi=1.2cm$,   
-        $$D=40.5+4.0+1.2=45.7 cm$$
-        $$D = 50cm \text{ is safe.}$$
-\item  \textbf{Design for moment}
-\equmacro \ref{eq:criticalMoment} gives,
-$$M_{1-1}=0.01975 \times225(225-40)^2/8=19011kN/cm$$
-With rectangular compression zone, \chartmacro (2.2) gives for,
-        $$d=50-4.0-1.2=44.8cm$$
-        $$k=\frac{1.5\times19011}{1.5\times225\times(44.8)^2}=0.042$$
-        $$\mu = 0.0475$$
-        $$A_{st}=\frac{0.0475\times225\times44.8\times15}{0.87\times415}=19.89cm^2$$
-        $$\frac{A_{st}}{A}=\frac{19.89}{2.25}=8.84cm^2/m $$
-$\phi 12/12 c/c $ both ways provided giving an area$ = 9.42cm^2/m$
 
-\tablemacro 11.4 gives the minimum tension steel area in footings taken as slab,
-$$A_{st}(min)=0.12\times50=6.0cm^2/m$$
-which is exceeded by that provided.
-\item  \textbf{Design for beam shear}
-        \equmacro \ref{eq:shear22} gives,
-        $$S_{2-2}=0.01975\times225\bigg[\frac{225-40}{2}-44.8\bigg]=212kN$$
-        \equmacro \ref{eq:shearstress22} gives
+\begin{sagesilent}                                                      
+def multipleCheck(number, divisor=25):                                
+# If not directly divisible by divisor.                                 
+  if (number % divisor) != 0:                                             
+      y = int(number / divisor)   # flooring the value.             
+      y += 1                      # Adding 1 for choosing next multiple.
+      final_value = y * divisor   # Multiply the new quotient with divisor.
+                                                                        
+  elif number == 0:                                                     
+      final_value = divisor                                             
+                                                                        
+  else:                                                                 
+      final_value = number                                              
+  return final_value                                                     
+\end{sagesilent}        
+
 \begin{sagesilent}
-       var('tau_v,tau_c,tau_a')
+  var('A,P,p')
+  f(P,p)=P/p
+  A(P,p)=(f(P,p))^(1/2)
+  
+  s0=f(P,p)
+  s=f(PP,pp)
+  o1=A(PP,pp).n(digits=4)
+  s1=multipleCheck(o1)
 \end{sagesilent}
-$$\sage{tau_v}=\frac{1.5\times212}{225\times44.8}=0.032kN/cm^2$$
-For $$\frac{100A_{s}}{bd}=\frac{100\times9.42}{100\times44.8}=0.21,$$
 
+\equmacro \ref{eq:footingArea} gives,        
+$$A^2 = \sage{s0} = \sage{s.n(digits=5)} \cmsquaremacro$$
+$$A = \sage{o1} \cmmacro$$
+$$A = \sage{s1} \cmmacro$$
+
+\begin{sagesilent}
+  p(A)=1000/(A*A)
+  s2=p(s1)
+  s2 = s2.n(digits=4)
+\end{sagesilent}
+
+Provided $\sage{s1} \times \sage{s1}$ base and  
+$$p = \sage{s2} \kNmsquaremacro$$
+
+\begin{sagesilent}
+  var('AA,const')
+  const = 4.5
+  f1(AA) = AA/const.n(digits=3)
+  s3=f1(A)                                           
+  s4=f1(s1) 
+\end{sagesilent}
+
+\tablemacro \ref{chaptertable} gives for $p = \sage{pp.n(digits=2)}$, 
+and steel \Fefouronefivemacro,
+ 
+$$D = \sage{f1(A)} = \sage{s4} \cmmacro$$   
+
+
+\begin{sagesilent}
+  var('alpha')
+  f2(f_ck,alpha,p)=(.067.n(digits=2)*((f_ck)^(1/2))*alpha)/p
+  s5=f2(f_ck,alpha,p)
+  s66=f2(ff_ck,1,pp)
+  
+  f3(a,A)=a/A
+  s6=f3(a,A)
+  s7=f3(aa,s1)
+
+  f4(A,q)=q*A
+  s8=f4(A,s7)
+  s9=f4(s1,s7)
+
+  e1(a,k) =1/(-1/2*(a*k + 2*a - sqrt(a^2*k^2 + 4*k + 4))/(k + 1))          
+  o2 = e1(a,k)                                                          
+  o3 = e1(s7,s66) 
+  o4 = o3.n(digits=2) 
+  
+  s9 = f4(s1,o4)
+  o9 = s9.n(digits=3)
+
+  e3(A,o) = A/o
+  o7 = e3(A,o4)
+  s9 = e3(s1,o4)
+
+  o5 = f3(A,d)
+\end{sagesilent}
+
+\item \textbf{Check for perimeter shear}   
+
+\chartmacro \ref{Dummy chart} gives for, 
+$$k = \sage{s5} = \sage{s66.n(digits=4)}$$
+$$\sage{s6} = \sage{s7}$$
+
+\begin{comment}
+$$d = \sage{s8} = \sage{s9.n(digits=3)}$$ 
+\end{comment}
+
+
+$$\sage{o5} = \sage{o4}$$
+
+$$d = \sage{s9}$$ 
+
+%$$d = \sage{s9}$$
+
+\begin{sagesilent}
+  var('cc,pphi')
+  cc=4
+  pphi=1.2
+  f5(d,c,phi) = d + c + phi
+  s10 = f5(d,c,phi)
+  s11 = f5(s9,cc,pphi)
+  s11 = s11.n(digits=4)
+  s107= s11.n(digits=4)  
+  s11=multipleCheck(s11,25)
+  s11 = s11.n(digits=4) 
+ 
+  f6(p,B,A,a) = p*B*((A-a)^2)/8
+  s12 = f6(p,B,A,a)
+  s13 = f6(s2,s1,s1,aa)
+
+  f7(D,c,phi) = D-c-phi
+  s14=f7(D,c,phi)
+  s15=f7(s11,cc,pphi)
+
+  f8(M_1,A,d) = (1.5*M_1)/(1.5*A*(d**2))
+  s16=f8(M_1,A,d)
+  s17=f8(s13,s1,s15)
+  
+  if(s4>s107):
+    s109=s4
+  else:
+    s109 = multipleCheck(s107)
+\end{sagesilent}
+
+\equmacro \ref{eq:depth-cover} gives with $c = \sage{cc.n(digits=2)} \cmmacro,
+\phi=\sage{pphi.n(digits=2)}$,
+$$D = \sage{s10} = \sage{s107} \cmmacro$$
+$$D = \sage{s109} \cmmacro \text{ is safe} $$
+
+\item  \textbf{Design for moment}  
+\equmacro \ref{eq:criticalMoment} gives, 
+$$M_{1-1} = \sage{s12} = \sage{s13.n(digits=6)} \kNmsquaremacro$$
+
+With rectangular compression zone, \chartmacro (2.2) gives for,   
+$$d = \sage{s14} = \sage{s15.n(digits=4)}$$
+$$k = \sage{s17.n(digits=4)}$$
+\begin{sagesilent}
+  var('mu')
+  
+  # f9(mu)=mu/.87
+  #mu=.0475
+  #s20=f9(mu)
+
+  f9(mu,A,d,f_ck,f_y)=(mu*A*d*f_ck)/(.87.n(digits=3)*f_y)
+  s18=f9(mu,A,d,f_ck,f_y)
+  mu = .0475
+
+  s19=f9(mu,s1,s15,ff_ck,ff_y).n(digits=4)
+
+  f10(A_st,A)=A_st/A
+  s20=f10(A_st,A)
+  
+  s21=s1/100
+  s22=f10(s19,s21)
+  
+  f11(D) = .12.n(digits=2)*D
+  s23=f11(D)
+  s24=f11(s11)
+
+  d1= (1000)/(120)
+  d3=d1.n(digits=0)
+  w1(d4,r) = (d4*3.14*r**2)/100
+  d2=w1(d3,6)
+  d2 = d2.n(digits=2)
+
+\end{sagesilent}
+$$\mu = \sage{mu.n(digits=2)}$$
+$$A_{st} = \sage{s18} = \sage{s19} \cmsquaremacro$$
+$$\sage{s20} = \sage{s22} \cmsquaremetermacro$$
+        
+$\phi 12/12$ $c/c$ both ways provided giving an area$ = 9.42 \cmsquaremetermacro$      
+           
+\tablemacro 11.4 gives the minimum tension steel area in footings taken
+as slab,
+$$A_{st}(min) = \sage{s23} = \sage{s24} \cmsquaremetermacro$$
+which is exceeded by that provided. 
+
+\item  \textbf{Design for beam shear}\\                              
+          \equmacro \ref{eq:shear22} gives, 
+
+\begin{sagesilent}
+  f12(p,A,a,d)=p*A*(((A-a)/2)-d)
+  s25=f12(p,A,a,d)
+  s26=f12(s2,s1,aa,s15)
+
+  f13(S_22,A,d) = (1.5.n(digits=2)*S_22)/(A*d)
+  s27 = f13(S_22,A,d)
+  s28 = f13(s26,s1,s15)
+  
+  f14(A_s,b,d) = (100 * A_s)/(b*d)
+  s29 = f14(A_s,b,d)
+  s30 = f14(d2,100,s15)
+\end{sagesilent}
+
+$$S_{2-2} = \sage{s25} =\sage{s26.n(digits=4)} \kNmacro$$
+\equmacro \ref{eq:shearstress22} gives
+
+$$\tau = \sage{s27} = \sage{s28} \kNmsquaremacro$$
+$$\sage{s29} = \sage{s30}$$
+        
 Table 19 of the Code gives,
-$$\sage{tau_c}=0.32N/mm^2$$
-With
-$$k = 1.0 $$
-\equmacro \ref{eq:concretesolidslabs} gives, 
-        $$\sage{tau_a}=\sage{tau_c}=0.032kN/cm^2$$
-With        
-$$\sage{tau_v}=\sage{tau_a}, D = 50 cm \text{ is safe}$$
 
-\item  \textbf{Check on development length of footing bars}
+$$\sage{tau_c}=0.32 \Nmmsquaremacro$$                                             
+With                                                                    
+$$k = 1.0 $$                                                            
+\equmacro \ref{eq:concretesolidslabs} gives,                            
+        $$\sage{tau_a}=\sage{tau_c}=0.032 \kNmsquaremacro$$                      
+With                                                                    
+$$\sage{tau_v}=\sage{tau_a}, D = 50 \cmmacro \text{ is safe}$$                
+                                                                        
+\item  \textbf{Check on development length of footing bars}             
+                                                                        
+\tablemacro (11.13) gives, for footings bars of $\phi$ 12 
+\Fefouronefivemacro),
 
-\tablemacro (11.13) gives, for footings bars of $\phi$ 12 (\Fefouronefivemacro),
+\begin{sagesilent}
+  f15(phi) = 55*phi
+  s31 = f15(phi)
+  s32 = f15(1.2)
 
-$L_d$ (tension) = 55$\phi$ = 55 x 1.2 = 66 cm.
+  f16(A,a) = (((A-a)/2)-4)
+  s33 = f16(A,a)
+  s34 = f16(s1,aa)
+  s34 = s34.n(digits=3)
+\end{sagesilent}
 
-\equmacro \ref{eq:uniformallydeepfooting} gives, 
+$$L_d(tension) = \sage{s31} = \sage{s32.n(digits=2)} \cmmacro$$
+\equmacro \ref{eq:uniformallydeepfooting} gives,
 
-$$y=\bigg[\frac{(225-40)}{2}-4.0\bigg]=88.5cm$$
+$$y = \sage{s33} = \sage{s34} \cmmacro$$
 
-with $y > L_d$ (tension), footing bars will develop full strength at the critical section.
-
-It may be noted that with $D$ = 50 $cm$, this type of footing of uniform depth is not economical. 
-Footing of Types ($b$) and ($c$) with sloping depth would be more economical than the present design.
-\end{enumerate} %--------second numerical example---------%
-\textbf{ Example 12.2. Rectangular sloped footing of Type ($c$).}\\
-\textbf{Given:}
+with $y > L_d$ (tension), footing bars will develop full strength at
+the critical   section.
+                                                                        
+It may be noted that with $D$ = $\sage{s11}$  $\cmmacro$, this type of footing
+of uniform depth is   not economical. Footing of Types ($b$) and ($c$)
+with sloping depth would be more economical than   the present design.
+\end{enumerate}
+%==================== second numerical example =======================%
+\textbf{Example 12.2. Rectangular sloped footing of Type ($c$).}\\
+\textbf{Given:}\\
 Same as in Ex. 12.1 with
-$$a = 40 cm$$
-$$b = 60 cm$$ 
+\begin{sagesilent}
+ var('avalue,bvalue')
+ avalue = 40
+ bvalue = 60
+\end{sagesilent}
+
+
+\begin{sagesilent}
+ var('B,A,b,a')
+ func1(B,A)=B-A
+ func2(b,a)=b-a
+
+ subf=func1(B,A)
+ subf2=func2(b,a)
+ subv=func1(bvalue,avalue) 
+\end{sagesilent}
+
+\begin{sagesilent}
+ var('A,B,pp')
+ A = 215
+ B = 235
+
+ func3(P) = P/(A*B)
+
+ divf=func3(P)
+ divv = func3(1000)
+\end{sagesilent}
+
+$$a = \sage{avalue} \cmmacro$$
+$$b = \sage{bvalue} \cmmacro$$ 
+and the footing is to have equal overhangs on all sides of column.\\
+\textbf{Required:} Design the footing\\
+\textbf{Solution:} Dimension of footing
+
+\equmacro \ref{eq:footingArea} gives,        
+$$A^2 = \sage{s0} = \sage{s.n(digits=5)} \cmsquaremacro$$
+
+The equal overhang condition, \equmacro \ref{eq:shape} gives,
+$$\sage{subf2} = \sage{subf}=\sage{subv}$$
+
+The solution of these two equations gives, 
+$$A=\sage{A}  \cmmacro$$
+$$B=\sage{B} \cmmacro$$
+
+Practical designer may choose A = \sage{A} \cmmacro and B = \sage{B}\cmmacro  
+$$p=\sage{divf}$$
+$$p= \sage{divv.n(digits=4)}$$
+%==================================================================%
+\begin{comment}
+
+$$a = 40 \cmmacro$$
+$$b = 60 \cmmacro$$ 
 and the footing is to have equal overhangs on all sides of column.\\
 \textbf{Required:} Design the footing\\
 \textbf{Solution:}
+
 \begin{enumerate}
 \item   \textbf{Dimensions of footing}\\
   \equmacro \ref{eq:footingArea} gives,
-  $$ A\times B= \frac{1000}{0.02}=50000 cm^2$$
+  $$ A\times B= \frac{1000}{0.02}=50000 \cmsquaremacro$$
   The equal overhang condition, \equmacro \ref{eq:shape} gives,
   $$ b-a=B-A=20 cm$$
   The solution of these two equations gives,
@@ -528,7 +853,8 @@ and the footing is to have equal overhangs on all sides of column.\\
  \equmacro \ref{eq:depth-cover} gives, with c = 4.0 cm, $\phi$ = 1.2 cm,
  $$d=60-(4.0+1.2)=54.8cm$$
  \equmacro \ref{eq:shape} gives,
- $$ \alpha=\frac{15}{54.8}+\frac{(60-15)}{54.8}.\frac{\Bigg(1-\frac{40}{215}-\frac{54.8}{215}\Bigg)}{\Bigg(1-\frac{40}{215}\Bigg)}-\frac{(4.0+1.2)}{54.8}$$
+ $$ \alpha=\frac{15}{54.8}+\frac{(60-15)}{54.8}.\frac{\Bigg(1-\frac{40}{215}-
+\frac{54.8}{215}\Bigg)}{\Bigg(1-\frac{40}{215}\Bigg)}-\frac{(4.0+1.2)}{54.8}$$
  $$=\frac{1}{54.8}(15+30.91-5.2)=0.74$$
  \chartmacro \ref{Dummy chart} gives for,
  $$ k=\frac{0.067\sqrt{15}\times0.74}{0.0198}=9.70$$
@@ -548,7 +874,8 @@ and the footing is to have equal overhangs on all sides of column.\\
    $$\mu=0.11$$
    $$A_{st}=\frac{0.11 \times 60 \times 54.8 \times 15}{0.87 \times 415}=15.03cm^2$$
    $$\frac{A_{st}}{B}=\frac{15.03}{2.25}=640 cm^2/m$$
-  Minimum steel for average value of $D =\dfrac{(60+15)}{2}=37.5$ regarding footings as slabs,
+  Minimum steel for average value of $D =\dfrac{(60+15)}{2}=37.5$ 
+  regarding footings as slabs,
   $$A_{st}(min)=0.12\times 37.5=4.20 cm^2/m$$
   Provide $\phi$ $12/17$ $c/c$ bothways, $area=6.65 cm^2/m$
   
@@ -583,7 +910,10 @@ $$k=0.067\frac{\sqrt{f_{ck}}}{p}$$
 \equmacro \ref{eq:uniformallydeepfooting} gives,
 $$y=\Bigg[\frac{(215-40)}{2}-4.00\Bigg]=83.5 \text{cm } > 66 \text{cm OK,}$$
 \end{enumerate}
-%--------------sage graph--------------%
+\end{comment}
+
+%=================================================================================%
+%--------------------------------sage graph---------------------------------------%
 \begin{sagesilent}                                                      
         var('a,A,d,k')                                                  
         f(k)=(1-(a**2)-(2*(a**2)*(d))-(d**2))/((a*d)+d**2)              
@@ -598,9 +928,11 @@ $$y=\Bigg[\frac{(215-40)}{2}-4.00\Bigg]=83.5 \text{cm } > 66 \text{cm OK,}$$
         zz=z1+z2+z3+z4+z5+z6                                            
                                                                       
 \end{sagesilent}                                                        
-\begin{chart}                                                             \begin{center}                                                     
+\begin{chart}          
+        \begin{center}                                                     
         \sageplot{zz,axes_labels=   ['$k$','$d/A$']}                       
-\end{center}                                                       \caption{Effective Depth $(d)$ of Square Individual Footings for Safety of perimeter shear}  
+\end{center}
+\caption{Effective Depth $(d)$ of Square Individual Footings for Safety of perimeter shear}  
 \label{Dummy chart}    
 \end{chart}    
 
@@ -610,7 +942,8 @@ $$y=\Bigg[\frac{(215-40)}{2}-4.00\Bigg]=83.5 \text{cm } > 66 \text{cm OK,}$$
 \item $p$ in $kN/cm^2$b
 \item For rectangular column $a\times b$
 Assume $a=\dfrac{(a+b)}{2}$ as in approximation provided $a/b$ $\leq$ $0.50.$
-\item Chart can be used for squarish rectangular footings provided an equal overhang is left beyond faces of column with $A=\dfrac{A+B}{2}$\\
+\item Chart can be used for squarish rectangular footings provided an 
+equal overhang is left beyond faces of column with $A=\dfrac{A+B}{2}$\\
 For equal overhang $(b-a)=(B-A)$
 \item $\alpha=1.0$ for types (a),(b) and (d)(\figmacro \ref{Types-of-individual-spread-footing})
 \item $\alpha<1.0$ for type (c). Use \equmacro \ref{eq:shape}
@@ -618,7 +951,16 @@ For equal overhang $(b-a)=(B-A)$
 \end{enumerate}
 
 \section{Conclusion}
-Provisions of the Code on footings have been applied to individual spread footings, square, or rectangular in plan with depth uniform, varying or stepped. Design aids are given for  fixing depth of footings and checking it in respect of requirements of safety in perimeter shear.Procedure for design of footings for bending moment, shear and development length of tension steel bars is given in detail and examples are given to illustrate it. For a large-sized rectangular footing, a footing beam in the long direction will be more economical than the traditional isolated footing. Also, for large square footings, two cross footing beams with a uniform base slab will make for economy.
+Provisions of the  \citetitle{IS2000} on footings have been applied to individual spread
+footings, square, or rectangular in plan with depth uniform, varying or 
+stepped. Design aids are given for  fixing depth of footings and checking
+it in respect of requirements of safety in perimeter shear. Procedure for
+design of footings for bending moment, shear and development length of 
+tension steel bars is given in detail and examples are given to illustrate it.
+For a large-sized rectangular footing, a footing beam in the long direction 
+will be more economical than the traditional isolated footing. Also, for
+large square footings, two cross footing beams with a uniform base slab
+will make for economy.
 
 \begin{table}[h!]\centering
         \pgfplotstableset{% global config, for example in the preamble
@@ -642,11 +984,12 @@ Provisions of the Code on footings have been applied to individual spread footin
 \textbf{Note:}
 \begin{enumerate}
 \item \textbf{{'A'} is the average of sides of rectangular footing.
-\item For sloped (type c) and stepped (type d) footings, increased depth given by
+\item For sloped (type c) and stepped (type d) footings, increased depth
+given by
 the above table by 20\%}.
 \end{enumerate}
+
 ~\cite{is4562000}
 ~\cite{aci1981aci}
 ~\cite{aci31877}
 \printbibliography
-\end{document}s
