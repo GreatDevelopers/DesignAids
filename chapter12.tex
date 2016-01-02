@@ -513,8 +513,8 @@ than the footings of uniform depth.
 \begin{sagesilent}
   var('PP,pp,aa,ff_ck,ff_y')
   PP = 1000
-  pp = 200
-  aa = 400
+  pp = .02
+  aa = 40
   ff_ck = 15
   ff_y = 415
 \end{sagesilent}
@@ -818,21 +818,61 @@ depth would be more economical than the present design.
 \textbf{Example 12.2. Rectangular sloped footing of Type ($c$).}\\
 \textbf{Given:}
 Same as in Ex. 12.1 with
-$$a = 40 cm$$
-$$b = 60 cm$$ 
+
+\begin{sagesilent}                                                      
+  var('aa,bb')                                                          
+  aa = 40                                                               
+  bb = 60                                                               
+\end{sagesilent}                                                        
+                                                                        
+$$a = \sage{aa} cm$$                                                    
+$$b = \sage{bb} cm$$ 
+
 and the footing is to have equal overhangs on all sides of column.\\
 \textbf{Required:} Design the footing\\
 \textbf{Solution:}
 \begin{enumerate}
+\begin{sagesilent}
+  m1(P,p) = P/p
+  q1 = m1(P,p)
+  q2 = m1(PP,pp).n(digits=4)
+  m2(a,b) = b - a
+  q3 = m2(a,b)
+  q4 = m2(A,B)
+  q5 = m2(aa,bb)
+
+  m3(A) = A*(q5+A)-q2
+  assume(A>0)
+  q6 = solve(m3(A),A,solution_dict=true)
+  q7 = q6[0][A]
+  q7 = q7.n(digits=4)
+  q7 = ceil(q7)
+  m4(A) = q5+A
+  q8 = m4(q7)
+
+  q9 = multipleCheck(q7,5)
+  q10 = multipleCheck(q8,5)
+
+  m5(P,A,B) = P/(A*B)
+  q11 = m5(P,A,B)
+  q12 = m5(PP,q9,q10)
+  q12 = q12.n(digits=3)
+\end{sagesilent}
 \item   \textbf{Dimensions of footing}\\
   \equmacro \ref{eq:footingArea} gives,
-  $$ A\times B= \frac{1000}{0.02}=50000 cm^2$$
+
+  $$A \times B = \sage{q1} = \sage{q2}$$  
+
   The equal overhang condition, \equmacro \ref{eq:shape} gives,
-  $$ b-a=B-A=20 cm$$
+  $$\sage{q3} = \sage{q4} = \sage{q5}$$
+  
   The solution of these two equations gives,
-  $$A=214 cm$$
-  $$B=234 cm$$
-  Practical designer may choose A = 215 cm and B=235 cm
+  $$A = \sage{q7} cm$$
+  $$B = \sage{q8} cm$$
+
+  Practical designer may choose $A = \sage{q9} cm$ and $B = \sage{q10} cm$
+  $$p = \sage{q11} = \sage{q12} kN/cm^2$$
+  
   $$p=\frac{1000}{215\times235}=0.0198  kN/cm^2$$
   \tablemacro \ref{chaptertable} gives for $p$ = 0.02 and steel \Fefouronefivemacro,
  $$\frac{D}{A}=\frac{1}{4.5}\times1.20$$
