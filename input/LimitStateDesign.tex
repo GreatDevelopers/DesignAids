@@ -32,7 +32,7 @@ test of an acceptable structural design is economy.
 
 In design of reinforced concrete structures, all critical sections are
 checked for the effect of forces acting on them. So, the economy of
-design achieved here refers to the critical sections. his approach in
+design achieved here refers to the critical sections. This approach in
 itself may make a marginal difference, say, within 5\% of cost of
 structure, which in itself, is about 40\% to 50\% of the total cost of
 building. More substantial economies in cost of structures are achieved 
@@ -48,8 +48,7 @@ Limit state method includes consideration of structures at both the
 working and the ultimate load levels with a view to satisfy the
 requirements of safety and serviceability. It offers an integrated
 approach to design of structures. A reinforced concrete section needs 
-to %\footnote{*The number on top refers to Reference given in Appendix B.}
-be checked for forces acting on it, together with relevant serviceability
+to be checked for forces acting on it, together with relevant serviceability
 requirements. Each force or a serviceability requirement is called a 
 limit state. The aim of design is to ensure that a reinforced concrete
 section does not reach any of the limit states to which it may be subjected.
@@ -68,7 +67,6 @@ under the following limit states :
 \item Deflection
 \item Cracking
 \end{enumerate}
-
 Limit states (i) to (vi) refer to ultimate limit states or limit states
 of collapse, while the last two limit states refer to serviceability 
 requirements. Limit state of tension, as may occur in design of concrete 
@@ -80,18 +78,15 @@ cover to reinforcement, provision of minimum steel area and other special
 details. Limit state of cracking is satisfied by adhering to the
 requirements of minimum steel area and spacing of bars in members. Thus,
 analysis of reinforced concrete sections under the various ultimate limit
-states (i) to (vi) is required. Further, limit state of deﬂection, which
-is crucial for bending members—slabs and beams—needs consideration in 
+states (i) to (vi) is required. Further, limit state of deflection, which
+is crucial for bending members-slabs and beams-needs consideration in 
 detail.
 
 \section{Safety Factors}
 
 The system of partial safety factors is followed in the
 \citetitle{is4562000} as against the system of uniﬁed safety factors
-followed in the old code. The values of partial safety factors Yf for
-loads are given in \tablem 18 of the Code, which are valid for various
-load-combinations mentioned therein. \tablem 18 of the \citetitle{is4562000}
-gives ultimate loads for the two common load-combinations as
+followed in the \citetitle{is4561964}. The values of partial safety factors ${Y_f}$ for loads are given in \tablem 18 of the Code, which are valid for various load- combinations mentioned therein. \tablem 18 of the \citetitle{is4562000} gives ultimate loads for the two common load-combinations as
 follows:
 
 \begin{equation}
@@ -100,12 +95,13 @@ UL = 1.2 (DL + LL + WL or EL)
 \end{equation}
 
 The values of partial safety factors for loads are to be supplemented
-with partial safety factors
+with partial safety factors $Y_m$ for material strenghts.The Code gives           
 
-\begin{align}
+\begin{equation}
 \gamma_m (concrete) = 1.50\\
 \gamma_m (steel) = 1.15 
-\end{align}
+\end{equation}
+
 The \citetitle{is4561964} gave values of 1.85 and 1.4 as factors of
 safety for total loads for the two load-combinations considered in
 \eqn 1.1 and \eqn 1.2 respectively and practical examples of design of
@@ -116,8 +112,7 @@ systems of partial safety factors incorporated in the
 \section{Stress-Strain Diagrams for Materials}
 
 \fig 21 of the Code gives the stress-strain diagram for concrete which
-is rectangular-parabolic in shape. The design strength at the extreme
-ﬁbre in compression is given by,
+is rectangular-parabolic in shape. The design strength at the extreme fibre in compression is given by,
 
 \begin{equation}
 f_c = 0.67\frac{f_{ck}}{\gamma_m} = 0.67\frac{f_{ck}}{1.5}=0.45 f_{ck}
@@ -126,8 +121,8 @@ Where, $f_{ck}$ is the characteristic cube strength of concrete in
 compression at 28days. The factor 0.67 in \eqn 1.5 accounts for
 variation in strength of concrete in actual structure as against
 that in the cube test of concrete. \eqn for concrete stress diagram
-of \fig 21 of the Code is given with reference to \eqn 1.1. For the
-range x = O to g (A to B),
+of \fig 21 of the Code is given with reference to \fig 1.1. For the
+range x = 0 to g (A to B),
 
 \begin{figure}
 \begin{subfigure}{0.5\textwidth}
@@ -148,13 +143,16 @@ range x = O to g (A to B),
 \end{figure}
 
 \begin{equation}
-y=-\frac{h}{g}^2 x^2+\frac{2h}{g} x
+y=-\frac{h}{g}^2.x^2+\frac{2h}{g} x
 \end{equation}
+
 and for the range x = g to $x_{u}$ (B to C),
 \begin{equation}
 y=h
 \end{equation}
+where
 $$h=\frac{4}{9}f_{ck}$$
+and
 $$g=\frac{4}{7}x_u$$
 For a given shape of concrete compression zone, the amount of concrete
 compressive force (C) and its location from the neutral axis ${(\bar x_1)}$
@@ -172,17 +170,18 @@ C=\int_{x=g}^{x=0}b(x).y(x).\,dx+\int_{{x=x_u}}^{x=g}b(x).h.\,dx\\
 C.(\bar x_1)=\int_{x=g}^{x=0}b(x).y(x).x.\,dx+\int_{{x=x_u}}^{x=g}b(x).h.x.\,dx
 \end{align}
 
-The location of the concrete compressive force from the top ﬁber of 
+The location of the concrete compressive force from the top fiber of 
 section is given by (\fig 1.2),
 \begin{equation}
 \bar x=x_u-\bar x_1
 \end{equation}
+
 \eqn ( 1.8) to \eqn (1.10) are applied to rectangular and triangular
 shapes of concrete compression zone and the results are given in \fig 1.3.
 
 When the concrete stress diagram is only a part-parabola (\fig 1.4), 
 the expressions for the area (A) of the stress diagram and the location
-of its centre of gravity ${(\bar x)}$ from the top ﬁbre of section are
+of its centre of gravity ${(\bar x)}$ from the top fibre of section are
 given below.
 
 \begin{figure}
@@ -221,14 +220,13 @@ f_c=-\frac{h}{g}^2.x_u^2+2.\frac{h}{g}.x_u
 When the neutral axis falls below the section, the expressions for the
 area (A) of the concrete stress diagram and the location of its centre
 of gravity $(\bar x)$ are given below (\fig 1.5).
-\iffalse
 
-\begin{align}
+\begin{equation}
 j=0.45f_{ck}\left(\frac{4}{7k-3}\right)^2\\
 A=0.45f_{ck}D-\frac{4}{21}.j.D\\
-A.\bar{x}=0.45f_{ck}.\frac{D}^2{2}-\FRAC{8}{49}.j.D^2\\
-\end{align}
-\fi
+A.\bar{x}=0.45f_{ck}.\frac{D^2}{2}-\frac{8}{49}.j.D^2
+\end{equation}
+
 \fig 23 of the \citetitle{is4562000} gives stress-strain curves for
 steel types  (ordinary mild steel plain bars) and {\fefouronefive} and
 {\fefivezerozero} (high strength steel deformed bars) with the modulus ofelasticity
@@ -265,14 +263,15 @@ in both tension and compression,is given by,
 f_s=\frac{f_y}{\gamma_m}=\frac{f_y}{1.15}=0.87f_y
 \end{equation}
 
-where, fy is the characteristic yield strength of steel, as shown in
+where, $f_y$ is the characteristic yield strength of steel, as shown in
 \fig 23 of the \citetitle{is4562000}. \tablem 1.1 gives values of design
 stresses in steel type {\fefouronefive} for various strain values.
 This table is used extensively for developing design aids for steel
-type {\fefouronefive}. In this manual, no separate design aids are given
+type {\fefouronefive}. 
+
+In this manual, no separate design aids are given
 for steel type {\fefivezerozero}. As the stresss-strain diagram for
-{\fefivezerozero} is similar to that for {\fefouronefive} and as the difference in
-the yield stresses of the two steel types is small, it is seen that. 
+{\fefivezerozero} is similar to that for {\fefouronefive} and as the difference in the yield stresses of the two steel types is small, it is seen that. 
 steel area for {\fefivezerozero}  in the design of reinforced concrete 
 sections can always be found with reasonable accuracy by using design
 aids for steel.
@@ -303,79 +302,72 @@ aids for steel.
 \label{fig:block}
 \end{figure}
 
-type {\fefouronefive} and using a $multiplier=\frac{415}{500} = 0.83$ to the steel
-area obtained for {\fefouronefive}. Thus, for all reinforced concrete members,
-design aids are givenonly for the two steel types {\fetwofivezero} and
-{\fefouronefive}.
+type {\fefouronefive} and using a $multiplier=\dfrac{415}{500} = 0.83$ to the steel area obtained for {\fefouronefive}. Thus, for all reinforced concrete members, design aids are givenonly for the two steel types {\fetwofivezero} and {\fefouronefive}.
 
 \section{Behaviour of Reinforced Concrete Members at Failure}
 
 A member under bending with or without axial load of either comperssive
 or tensile nature may fail under either of the following three modes of
-failure 4.
+failure.
 
 \begin{enumerate}[(i)]
 \item Tension failure.Concrete crushed or not crushed,but tension steel well in yield.
 \item Balanced failure.Concrete crushed and tension steel just in yield.
 \item Compression failure.Concrete crushed and tension steel not in yield.
 \end{enumerate}
-
 With a very low amount of tension steel, failure will be initiated by
 yielding of reinforcement and collapse will take place with snapping of
-reinforcement at the ultimate elongation , of steel (83m) as given by 
-the breaking tests of different types of steel speciﬁed by relevant
-codes5’ 6. “At this stage, strain in concrete at the extreme ﬁbre of 
-section (81) may be less than the maximum crushing strain of concrete
-(0.0035). When the section is not excessively under-reinforced, failure
+reinforcement at the ultimate elongation , of steel ($\epsilon_{stu}$) as given by the breaking tests of different types of steel speciﬁed by relevant
+codes5’6. “At this stage, strain in concrete at the extreme fibre of 
+section ($\epsilon_1$) may be less than the maximum crushing strain of concrete (0.0035). When the section is not excessively under-reinforced, failure
 is initiated by the yielding of tension steel. Consequently, the neutral
-axis shifts upwards and the ﬁnal collapse is also associated with the
+axis shifts upwards and the final collapse is also associated with the
 crushing of concrete. These two modes of failure fall under the category
 of tension failure which takes place gradually and gives ample warning
 before collapse.
 
 When the amount of tension steel is large, the section is over-reinforced.
-Then the concrete reaches its ultimate crushing strain $(\epsilon_{stu})$
+Then the concrete reaches its ultimate crushing strain (0.0035)
 before the tension steel starts yielding. This is called compression
 failure and it leads to a sudden collapse without warning due to the
 brittle nature of concrete. For this reason, it needs to be avoided or
 provided for, in design based on limit state of collapse. Balanced
 failure is just a transition between the tension and the compression
-failures. In general, members should be so designed that tension failure
+failures.
+
+In general, members should be so designed that tension failure
 is ensured at the limit state of collapse. In order to achieve this, the
 necessary criterion is that the tension steel must be well in yield. The
 Code, in its clause 38.1 (f) has, therefore, stipulated that the minimum
 strain in the tension steel shall exceed the linear elastic yield strain
-by 0.002. This ensures that the tension steel of a type with ﬁxed yield
-point like {\fetwofivezero} will deﬁnitely be in yield, thereby, giving ductility
-to the number. In cold worked steels like {\fefouronefive} and
-{\fefivezerozero}, the yield stress is associated with steel strain equal to
-$\epsilon_{std}=\frac{f_y}{1.15 E_s}+0.002$, thereby, satisfying the
-above requirement of the Code. Members under axial compression with or
-without moment fail under compression failure.This can not be avoided.
-But in order to reduce the suddenness and explosion of this type of
-failure, concrete crushing strain is reduced from 0.0035 to 0.002 and
-lateral ties are provided in members to improve ductility.
+by 0.002. This ensures that the tension steel of a type with fixed yield
+point like {\fetwofivezero} will deﬁnitely be in yield, thereby, giving ductility to the number. In cold worked steels like {\fefouronefive} and
+{\fefivezerozero}, the yield stress is associated with steel strain equal to              
+$\epsilon_{std}=\dfrac{f_y}{1.15 E_s}+0.002$, thereby, satisfying the
+above requirement of the Code.
+
+Members under axial compression with or without moment fail under compression failure.This can not be avoided. But in order to reduce the suddenness and explosion of this type of failure, concrete crushing strain is reduced from 0.0035 to 0.002 and lateral ties are provided in members to improve ductility.
 
 \section{Unified Approach}
 
 It would be ideal to consider a member under bending and axial load
 $(P_u, M_u)$ as a general case, of which a beam $(P_u=0,M_u)$, a column
-$(+ve P_u,M_u)$ and a tension member $(—ve P_u,M_u)$ form only particular
+$(+ve P_u,M_u)$ and a tension member $(-ve P_u,M_u)$ form only particular
 cases. This may be called a uniﬁed approach.The Code,in its Section 5 on
-the limit state method of structural design, has giVen a limited uniﬁed
+the limit state method of structural design, has given a limited uniﬁed
 approach for members under bending combined with axial compression but
 has made no mention of tension members. SP-16 $Design Aids^8$ have
 however,given charts for design of tension members with equal steel on
 opposite faces or equal steel on all four faces, without making clear the
 basis of their development.The old code had given separate treatments for
-beams,columns and ties giving no uniﬁed approach for their design. There
+beams,columns and ties giving no unified approach for their design. There
 is no doubt that these different members behave under load in special
 patterns but it is quite fascinating to include all these special
-patterns into a uniﬁed approach so that design aids can be developed
+patterns into a unified approach so that design aids can be developed
 which can be used with equal ease for design of beams, columns as well 
 as tension members. The compartmentalised approach for beams, columns
 and ties has led to proliferation of design aids and loss of continuity,
-clarity and conciseness in design. Further, the uniﬁed approach can be
+clarity and conciseness in design. Further, the unified approach can be
 extremely useful for design of reinforced concrete sections subject to
 biaxial bending combined with axial load of either nature.
 
@@ -385,11 +377,12 @@ limit state of collapse for bending combined with axial tension, the
 following additional assumptions are made.
 
 \begin{enumerate}[(i)]
-\item The minimum tensile strain in axial tension is taken equal to $\epsilon_{std}$,
+\item The minimum tensile strain in axial tension is taken equal to
+$\epsilon_{std}$,
 \begin{equation}
-where, 
 \epsilon_{std}=\frac{f_y}{1.15{\epsilon_s}}+0.002
 \end{equation}
+where, 
 \item  For bending combined with axial tension, the maximum tensile
 strain in the most highly stretched steel layer shall be equal to 1/10th
 the ultimate elongation $(\epsilon_{stu})$ which is given by the tensile
@@ -401,22 +394,23 @@ $codes^{5,6}$.This gives,
 \end{equation}
 
 The maximum tensile strain in steel is not given by the Code. The obvious
-value for the maximum tension steel strain is its snapping strain 83m. But
-the values of snapping strains for steel types Fe 250,Fe 415 and Fe 500 are
-quite high.Therefore,in order toput a limit on excessive cracking and
-spalling of concrete of tension zone, it is assumed that the maximum
-tensile strain may be limited to 1/10th the snapping strain of steel.For 
-steel types {\fetwofivezero}, {\fefouronefive} and {\fefivezerozero}, this 
-assumption gives values of 0.020, 0.0145 and 0.012 respectively for
-the maximum tensile strains.
-These values compare well with 0.005 and 0.01 assumedfor all types of
+value for the maximum tension steel strain is its snapping strain
+($\epsilon_{stu}$). But the values of snapping strains for steel types
+{\fetwofivezero},{\fefouronefive} and {\fefivezerozero} are quite high.Therefore,
+in order toput a limit on excessive cracking and spalling of concrete of tension zone,
+it is assumed that the maximum tensile strain may be limited to 1/10th the snapping strain
+of steel.For steel types {\fetwofivezero}, {\fefouronefive} and {\fefivezerozero},
+this assumption gives values of 0.020, 0.0145 and 0.012 respectively for the maximum tensile strains. 
+These values compare well with 0.005 and 0.01 assumed for all types of
 reinforcing steel by DIN $1045^9$ and CEB Model $Code^{10}$ respectively.
+
 Further, the requirement for ensuring ductility in sections,
 $$\epsilon_{st}=\epsilon_{std}=\frac{f_y}{1.15 E_s}+0.002$$
+
 has been given by the Code for tension failure of beams only. In the
 uniﬁed approach, this requirement of ductility is extended to tension
 failure of sections under bending with or without axial load of either
-compressive 0r tensile nature. As it is known that a ductile tension
+compressive or tensile nature. As it is known that a ductile tension
 failure is a gradual one and gives ample warning before collapse, it
 is advantageous to ensure ductility for all members (not only for beams) 
 under tension failure.
@@ -427,7 +421,7 @@ its full range of variation of axial load from
 $+P_u(compression) to -P_u (tension)$ with pure bending case $(P_u=0)$
 following as a transition. The design assumptions for a section under
 bending and axial load are portrayed in Fig. 1.6, by the various strain
-diagrams applicable for the full range of variation of Pu.
+diagrams applicable for the full range of variation of $P_u$.
 
 \begin{figure}
 \centering
@@ -436,48 +430,46 @@ diagrams applicable for the full range of variation of Pu.
 \label{fig:various}
 \end{figure}
 
-For a section under bending combined with axial compression, clause 39.1 (b) of the Code
-gives the equation,
+For a section under bending combined with axial compression, clause 39.1 (b) of the Code gives the equation,
 \begin{equation}
 \epsilon_1=0.0035-0.75\epsilon_2
 \end{equation}
+
 which represents various strain diagrams given in the line rotating about
-the point A (\fig 1.6). On a similar analbgy, the line rotating about the
+the point A (\fig 1.6). On a similar analogy, the line rotating about the
 point B (\fig 1.6) gives different strain diagrams applicable for a
 section under bending combined with axial tension, which can be got from
 the following relations for different types of reinforcing steel.
 
-\begin{align}
-For 
-Fe 250,\epsilon_{st}=0.0020-5.45\epsilon_1\\
-Fe 415,\epsilon_{st}=0.0145-2.82\epsilon_1\\
-Fe 500,\epsilon_{st}=0.012-1.86\epsilon_1
-\end{align}
+\begin{center}
+For $\fetwofivezero,\epsilon_{st}=0.0020-5.45\epsilon_1$\\
+For $\fefouronefive,\epsilon_{st}=0.0145-2.82\epsilon_1$\\
+For $\fefivezerozero,\epsilon_{st}=0.012-1.86\epsilon_1$
+\end{center}
 
 The above relationships have been derived by using the principles of
-similar triangles along with the values of $\epsilon_{st}, max, \epsilon_{std}$
-for various types of steel given in \tablem 1.2. Figure 1.6 gives by
+similar triangles along with the values of $\epsilon_{st,max}, \epsilon_{std}$ for
+various types of steel given in \tablem 1.2. Figure 1.6 gives by
 similar triangles,
 
 \begin{equation}
 n=\frac{\epsilon_1}{\epsilon_1+\epsilon_{st}}
 \end{equation}
 
-$n_b (balanced), n_max, n_min$ are calculated by the \eqn 1.26 and are
+$n_b (balanced), n_{max}, n_{min}$ are calculated by the \eqn 1.26 and are
 given in \tablem 1.2 for ready reference. Balanced failure is given by
 $\epsilon_1 = 0.0035, \epsilon_{st} =\epsilon_{sy}$ ($\epsilon_{sy}$
 corresponds to a steel strain when $f_{st} = 0.87 f_y$, to be read from
 stress-strain curves for steel given in \fig 23 of the
-\citetitle{is4562000}, balanced failure modiﬁed for ductility is given for
-$\epsilon_1 = 0.0035, \epsilon_{st} = \epsilon-{std}$ and tension failure
+\citetitle{is4562000}, balanced failure modified for ductility is given for
+$\epsilon_1 = 0.0035, \epsilon_{st} = \epsilon_{std}$ and tension failure
 with concrete not fully crushed is given for
 $\epsilon_1 < 0.0035, \epsilon_{st} > \epsilon_{std}$. Tension failure 
 with concrete not fully crushed is given for
-$n < n_min, When \epsilon_{st} = \epsilon_{st}max and\epsilon_1 < 0.0035. When n .<= 0$, 
-section is fully under tension and concrete strength is to be entirely
-neglected and only steel areas are to be utilised to resist external
-forces. When $n>n_b$, compression failure is indicated where concrete
-is crushed $(\epsilon_1= 0.002 to 0.0035)$, but tension steel is not
+$n < n_{min}, When \epsilon_{st} = \epsilon_{st,max} and \epsilon_1 < 0.0035. When n<= 0$,
+section is fully under tension and concrete strength is to be entirely neglected and only
+steel areas are to be utilised to resist external forces. When $n>n_b$, compression failure 
+is indicated where concrete is crushed $(\epsilon_1= 0.002 to 0.0035)$, but tension steel is not
 yield, it may rather be in compression as well. \fig 1.7 shows typical
 interaction curves for a section under bending and axial load with
 different Regions 1 to 5 marked therein, which are also shown in fig 1.6.
@@ -492,7 +484,8 @@ are summarised below.
 \end{figure}
 
 Region 1. Whole section under compression, design governed by compression
-failure with $\epsilon_1=0.002 to 0.0035, \epsilon_2=0 to 0.002 and n=\infty to D/d.$
+failure with $\epsilon_1=0.002 to 0.0035$, $\epsilon_2=0 to 0.002 and
+n=\infty \text{ to } D/d.$
 pplicable for axial compression with or without small moment.\\
 
 Region 2. Section partly under compression and partly under tension,
@@ -503,12 +496,13 @@ Applicable for axial compression with large moment.\\
 Region 3. Section partly under compression and partly under tension,
 design governed , by tension failure modiﬁed for ductility with
 
-$$\epsilon_1 = 0.0035 (constant)$$
-$$\epsilon_{st} =\epsilon_{sy} to \epsilon_{std} (theoretical)$$
-$$=\epsilon_{std} (assumed constant for ductility).$$
+$$\epsilon_1 = 0.0035 \text{ (constant)}$$
+$$\epsilon_{st} =\epsilon_{sy} \text{ to } \epsilon_{std}
+\text{ (theoretical)}$$
+$$=\epsilon_{std} \text{(assumed constant for ductility)}$$
 $$n<= n_b$$
-$$>n_{max} (theoretical)$$
-But $$n=n_{max} (assumed constant for ductility).$$
+$$>n_{max} \text{ (theoretical)}$$
+But $$n=n_{max} \text{ (assumed constant for ductility)}$$
 
 This is a region when the value of X is not ﬁxed.For a ﬁxed arrangement
 of steelin section,this region reduces to a straight line. \\
@@ -516,45 +510,52 @@ of steelin section,this region reduces to a straight line. \\
 Region 4. Section partly under compression and partly under tension,design
 governed by tension failure with concrete fully crushed with,
 
-$$\epsilon_1 = 0.0035 (constant)$$
-$$\epsilon_{st} = \epsilon_{std} to \epsilon_{st}, max$$
-$$and n = n_{max} t0 n_{min}$$
+$$\epsilon_1 = 0.0035 \text{ (constant)}$$
+$$\epsilon_{st} = \epsilon_{std} \text{ to } \epsilon_{st,max}$$
+$$\text{and n} = n_{max} \text{ to } n_{min}$$
 
 Applicable for moment and axial load of either nature.
+
 Region (4A) Section partly under compression and partly under tension,
 design governed by tension failure with concrete not fully crushed with
+$\epsilon_1 = 0.0035,\epsilon_{st},\epsilon_{st},
+\text{max(constant) and n} = 0 \text{ to } n_{min}.$
 
-$\epsilon_1 = 0 to0.0035, \epsilon_{st},\epsilon_{st},max(constant) and n = 0 to n_{min}$
+Applicable for moment and axial load mostly tensile in nature.
 
-Applicable for moment and axial load mostly tensile in nature.\\
 Region 5. Whole section under tension, design governed by tension failure with 
-$\epsilon_1 = 0 to \epsilon_{std} (tensile strains), \epsilon_{st}=\epsilon_{std}to \epsilon_{st}, max and n = 0 to — \infty.$
+$\epsilon_1 = 0 \text{ to }\epsilon_{std} \text{ (tensile strains)},
+\epsilon_{st}=\epsilon_{std} \text{ to } \epsilon_{st,max} \text{ and } n =
+0 \text{ to } -\infty.$
 Applicable for axial tension with or without small moment.
 
 \section{Analysis and Design of Structures}
 
 In practice, structures are analysed by the well-known principles and
-methods ofTheory of Structures under vertical and horizontal loads at the
+methods of Theory of Structures under vertical and horizontal loads at the
 working load level.There are distinct advantages in using working loads
 during analysis of structures. Firstly, these give a realistic assessment
 of loads on members and secondly, column loads are then directly usable
 for design of footings, with the soil bearing capacity known at the working
 load level.The choice of a common load factor of 1.5 for both dead and
 live loads makes it easy to get ultimate forces which are used for
-design of all critical sections in structural members. design of structural
-members—slabs, beams, columns and footings—based on the limit state method 
-in accordance with \citetitle{is4562000}. For each type of structural member, only
+design of all critical sections in structural members.
+
+
+Design aids-tables and charts-are developed in subsequent  chapters for
+easy and quick design of structural members—slabs, beams, columns and footings—based
+on the limit state method in accordance with \citetitle{is4562000}. For each type of structural member, only
 one type of design aid is given, which is chosen on the basis of its
 effectiveness and convenience in practice. All design aids have been 
 based on the governing formulae which have been fully derived and given
-in the subsequentchapters. For a complete understanding of the subject,
+in the subsequent chapters. For a complete understanding of the subject,
 this step. is quite important. Further, design aids are based strictly
 on the theoretical development and do not incorporate in themselves other
 design restrictions of the Code like minimum steel area in members, minimum
 eccentricity and slenderness effects on columns etc. These effects are
 dealt with separately outside the design aids. Design aids are developed
 in such a way that these are effective for both design and review of
-reinforced concrete sections. A uniﬁed approach for design of sections
+reinforced concrete sections. A unified approach for design of sections
 under bending (both uniaxial and biaxial) and axial load of either
 compressive or tensile nature is followed by which the same charts are
 capable of being used for beams, columns and ties. Design aids are
@@ -567,8 +568,9 @@ and design of structures. With SI units, it is convenient to work out
 loads in $kN/m^2$, moments and torques in or kNm, shears and column
 loads in kN and soil pressures in $N/mm^2$ or $kN/cm^2$. The Code
 gives values of all stresses $f_{ck}, f_y$ etc., in $N/mm^2$.'For working
-out non-dimensional parameters like $\frac{P_u}{f_{ck}bD},\frac{M_u}{f_{ck}bD^2}$
-etc.
+out non-dimensional parameters like
+$\dfrac{P_u}{f_{ck}bD},\dfrac{M_u}{f_{ck}bD^2}$ etc. it is convenient o
+use  values of stresses like $f_{ck}$ in $kN/cm^2$.
 
 
 It is a general practice to provide one type of reinforcing steel in a
@@ -585,14 +587,12 @@ their costs, it is economical to use deformed steel bars
 reinforcement in all members of buildings with the following two exceptions.
 
 \begin{enumerate}[(i)]
-
-
 \item Reinforcement in Slabs
 
-Mild steel plain bars (Fe 250) should be used in slabs in order to reduce
+Mild steel plain bars (\fetwofivezero) should be used in slabs in order to reduce
 slab thickness for control of deflection. For a general economy of the
 building as a whole, thin slabs are preferable (Chapter 6). In practice,
-Fe 415 steel is used in slabs with more steel provided at the midspan
+{\fefouronefive} steel is used in slabs with more steel provided at the midspan
 in order to get less slab thickness.
 
 \item Transverse Reinforcement in Columns
@@ -600,16 +600,16 @@ in order to get less slab thickness.
 The pitch and diameter of lateral ties in columns are given in clause
 26.5.3.2 (c) of the Code and these both are independent of steel quality.
 {\fetwofivezero}, {\fetwofivezero} can, therefore, be used for lateral
-ties in column for reasons of economy. Diameter 6 mm bars are rolled in
+ties in column for reasons of economy. Diameter 6 \mm bars are rolled in
 {\fetwofivezero} steel and these are used for column ties and stirrups in lintels.
 
 Provision of more than one type of reinforcing steel in structural
 members of a buildings calls for a careful planning and supervision at
 the site.
 \end{enumerate}
-\section{Conclusion}
 
+\section{Conclusion}
 The general principles and the basic assumptions of the limit state
 method of design of reinforced concrete structures are given in this
 chapter, which are to be read in conjunction with the relevant clauses
-of the Code.
+of the \citetitle{is4562000}.
