@@ -28,6 +28,14 @@ To run:
     3)sage main.sagetex.sage
     4)pdflatex main.tex
 
-To create  pdf through script run:
+To create pdf from make:
 -----------------------------
-    ./run
+    make
+
+After creating pdf you can run the below command to view pdf:
+-----------------------------
+    make view
+
+Clean all the unnecessary file which are made by make:
+-----------------------------
+    make clean
