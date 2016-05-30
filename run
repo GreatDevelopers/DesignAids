@@ -1,4 +1,0 @@
-pdflatex main.tex
-sage main.sagetex.sage
-biber main
-pdflatex main.tex
