@@ -636,5 +636,23 @@ The general principles and the basic assumptions of the limit state
 method of design of reinforced concrete structures are given in this
 chapter, which are to be read in conjunction with the relevant clauses
 of the \citetitle{is4562000}.
+%=============================== Table 1.1=========================%
 
+\begin{table}[h!]
+\centering
+ \pgfplotstabletypeset[
+  col sep = comma,
+  every head row/.style={before row=\toprule,after row=\midrule},
+  every last row/.style={after row=\bottomrule},
+  columns/blank/.style={string type,column name={}},
+  columns/A/.style={string type,column name={$\epsilon_{st}$}},
+  columns/B/.style={string type,column name={$f_s(N/mm^2)$}},
+  columns/C/.style={string type,column name={}},
+  columns/D/.style={string type,column name={$\epsilon_{st}$}},
+  columns/E/.style={string type,column name={$f_s(N/mm^2)$}},
+ ]
+{LSDtable.csv}
+\caption{Strain-stress Values for Steel Type {\fefouronefive} Based on
+\fig 22 of the Code}
+\end{table}
 
