@@ -54,6 +54,8 @@ limit state. The aim of design is to ensure that a reinforced concrete
 section does not reach any of the limit states to which it may be subjected.
 The usual approach is to design a section for a limit state which is
 likely to govern it and then check it for the remaining limit states.
+
+
 The Code gives principles for design of reinforced concrete sections
 under the following limit states : 
 
@@ -94,26 +96,30 @@ load-combinations as follows:
 
 \begin{equation}
 UL = 1.5 (DL + LL)
+\label{loadcombination1}
 \end{equation}
 
 \begin{equation}
 UL = 1.2 (DL + LL + WL or EL)
+\label{loadcombination2}
 \end{equation}
 The values of partial safety factors for loads are to be supplemented
 with partial safety factors $\gamma_m$ for material strenghts.The Code gives           
 \begin{equation}
 \gamma_m (concrete) = 1.50
+\label{SaftyFactorConcrete1}
 \end{equation}
 
 \begin{equation}
 \gamma_m (steel) = 1.15 
+\label{SaftyFactorConcrete2}
 \end{equation}
 The \citetitle{is4561964} gave values of 1.85 and 1.4 as factors of
 safety for total loads for the two load-combinations considered in
-\eqn 1.1 and \eqn 1.2 respectively and practical examples of design of
-slabs and singly reinforced beams show, that these compare well with the
-systems of partial safety factors incorporated in the
-\citetitle{is4562000}.
+\eqn \ref{loadcombination1} and \eqn \ref{loadcombination2} respectively
+and practical examples of design of slabs and singly reinforced beams
+show, that these compare well with the systems of partial safety factors
+incorporated in the \citetitle{is4562000}.
 
 \section{Stress-Strain Diagrams for Materials}
 
@@ -123,14 +129,16 @@ fibre in compression is given by,
 
 \begin{equation}
 f_c = 0.67\frac{f_{ck}}{\gamma_m} = 0.67\frac{f_{ck}}{1.5}=0.45 f_{ck}
+\label{ConcreteStrength}
 \end{equation}
 Where, $f_{ck}$ is the characteristic cube strength of concrete in
-compression at 28days. The factor 0.67 in \eqn 1.5 accounts for
-variation in strength of concrete in actual structure as against
-that in the cube test of concrete. \eqn for concrete stress diagram
-of \fig 21 of the Code is given with reference to \fig 1.1. For the
+compression at $28$ days. The factor 0.67 in \eqn \ref{ConcreteStrength}
+accounts for variation in strength of concrete in actual structure as
+against that in the cube test of concrete. \eqn for concrete stress diagram
+of \fig 21 of the Code is given with reference to
+\fig \ref{fig:Equations of the concrete stress diagram}. For the
 range x = 0 to g (A to B),
-
+%================================1 =====================
 \begin{figure}
 \begin{subfigure}{0.5\textwidth}
 \centering
@@ -146,51 +154,61 @@ range x = 0 to g (A to B),
 \label{fig:parabolic}
 \end{subfigure}
 \caption{Equations of the concrete stress diagram}
-\label{fig:equations}
+\label{fig:Equations of the concrete stress diagram}
 \end{figure}
 
 \begin{equation}
 y=-\frac{h}{g}^2.x^2+\frac{2h}{g} x
+\label{ConcreteStress1}  
 \end{equation}
-
+%=====================================
 and for the range x = g to $x_{u}$ (B to C),
 \begin{equation}
 y=h
+\label{ConcreteStress2}
 \end{equation}
 where
 $$h=\frac{4}{9}f_{ck}$$
 and
 $$g=\frac{4}{7}x_u$$
+
 For a given shape of concrete compression zone, the amount of concrete
 compressive force (C) and its location from the neutral axis ${(\bar x_1)}$
-can be obtained by integration (\fig 1.2).
-
+can be obtained by integration (\fig \ref{fig:ConcreteCompressionZone}).
+%==================================== 2 =============
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{images/concrete.png}
 \caption{Concrete compression zone of any given shape under the stress diagram of the Code}
-\label{fig:concrete}
+\label{fig:ConcreteCompressionZone}
 \end{figure}
-
+%=============================================
 \begin{align}
-C=\int_{x=0}^{x=g}b(x).y(x).\,dx+\int_{{x=g}}^{x=x_u}b(x).h.\,dx\\
-C.(\bar x_1)=\int_{x=0}^{x=g}b(x).y(x).x.\,dx+\int_{{x=g}}^{x=x_u}b(x).h.x.\,dx
+C=\int_{x=0}^{x=g}b(x).y(x).\,dx+\int_{{x=g}}^{x=x_u}b(x).h.\,dx
+\label{ConcreteCompressionForce1}
 \end{align}
 
+\begin{align}
+C.(\bar x_1)=\int_{x=0}^{x=g}b(x).y(x).x.\,dx+\int_{{x=g}}^{x=x_u}b(x).h.x.\,dx
+\label{ConcreteCompressionForce2}
+\end{align}
 The location of the concrete compressive force from the top fiber of 
-section is given by (\fig 1.2),
+section is given by (\fig \ref{fig:ConcreteCompressionZone}),
 \begin{equation}
 \bar x=x_u-\bar x_1
+\label{locationofConcreteCompressionForce}
 \end{equation}
+\eqn (\ref{ConcreteCompressionForce1}) to \eqn
+(\ref{locationofConcreteCompressionForce}) are applied to rectangular
+and triangular shapes of concrete compression zone and the results are
+given in \fig \ref{fig:ConcreteStressBlockParameter}.
 
-\eqn (1.8) to \eqn (1.10) are applied to rectangular and triangular
-shapes of concrete compression zone and the results are given in \fig 1.3.
-
-When the concrete stress diagram is only a part-parabola (\fig 1.4), 
+When the concrete stress diagram is only a part-parabola
+(\fig \ref{Part-ConcreteStressDiagram}, 
 the expressions for the area (A) of the stress diagram and the location
 of its centre of gravity ${(\bar x)}$ from the top fibre of section are
 given below.
-
+%========================================= 3 ===================
 \begin{figure}
 \centering
 \begin{subfigure}{0.5\textwidth}
@@ -213,9 +231,9 @@ given below.
 \label{fig:inverted}
 \end{subfigure}
 \caption{Concrete stress block parameters for three basic shapes of concrete compression zone.}
-\label{fig:concrete}
+\label{fig:ConcreteStressBlockParameter}
 \end{figure}
-
+%===============================================================
 \begin{align}
 \frac{x_u}{g}=\frac{\epsilon_1}{0.002}\\
 A=-\frac{1}{3}.\frac{h}{g}^2.x_u^3+\frac{h}{g}.x_u^2\\
@@ -226,7 +244,7 @@ f_c=-\frac{h}{g}^2.x_u^2+2.\frac{h}{g}.x_v
 
 When the neutral axis falls below the section, the expressions for the
 area (A) of the concrete stress diagram and the location of its centre
-of gravity $(\bar x)$ are given below (\fig 1.5).
+of gravity $(\bar x)$ are given below (\fig \ref{fig:neturalAxis}).
 
 \begin{equation}
 j=0.45f_{ck}\left(\frac{4}{7k-3}\right)^2
@@ -239,13 +257,15 @@ A=0.45f_{ck}D-\frac{4}{21}.j.D
 \begin{equation}
 A.\bar{x}=0.45f_{ck}.\frac{D^2}{2}-\frac{8}{49}.j.D^2
 \end{equation}
+
+
 \fig 23 of the \citetitle{is4562000} gives stress-strain curves for
 steel types  (ordinary mild steel plain bars) and {\fefouronefive} and
 {\fefivezerozero} (high strength steel deformed bars) with the modulus
 of elasticity of steel being $E_s = 2*10^5 N/mm^2$, which is given to be
 the same for all types of reinforcing steel.The design strength of
 steel, equal in both tension and compression,is given by,
-
+%======================================= 4 =================
 \begin{figure}
 \begin{subfigure}{0.3\textwidth}
 \centering
@@ -268,9 +288,9 @@ steel, equal in both tension and compression,is given by,
 \label{fig:strain}
 \end{subfigure}
 \caption{Part-parabolic concrete stress diagram}
-\label{fig:part}
+\label{Part-ConcreteStressDiagram}
 \end{figure}
-
+% ===============================================
 \begin{equation}
 f_s=\frac{f_y}{\gamma_m}=\frac{f_y}{1.15}=0.87f_y
 \end{equation}
@@ -290,7 +310,7 @@ accuracy by using design aids for steel type {\fefouronefive} and using
 a $multiplier=\dfrac{415}{500} = 0.83$ to the steel area obtained for
 {\fefouronefive}. Thus, for all reinforced concrete members, design aids
 are givenonly for the two steel types {\fetwofivezero} and {\fefouronefive}.
-
+% ============================ 5 =========================
 \begin{figure}
 \centering
 \begin{subfigure}{0.3\textwidth}
@@ -314,9 +334,9 @@ are givenonly for the two steel types {\fetwofivezero} and {\fefouronefive}.
 \label{fig:con}
 \end{subfigure}
 \caption{Concrete stress block parameters when netural Axis is below the section}
-\label{fig:block}
+\label{fig:neturalAxis}
 \end{figure}
-
+% ===========================================================
 \section{Behaviour of Reinforced Concrete Members at Failure}
 A member under bending with or without axial load of either comperssive
 or tensile nature may fail under either of the following three modes of
@@ -400,6 +420,7 @@ following additional assumptions are made.
 $\epsilon_{std}$,
 \begin{equation}
 \epsilon_{std}=\frac{f_y}{1.15{\epsilon_s}}+0.002
+\label{minimumtensilestrain}
 \end{equation}
 where, 
 \item  For bending combined with axial tension, the maximum tensile
@@ -411,7 +432,6 @@ $codes^{5,6}$.This gives,
 \begin{equation}
 \epsilon_{st},max=\frac{1}{10}.\epsilon_{stu}
 \end{equation}
-
 The maximum tensile strain in steel is not given by the Code. The obvious
 value for the maximum tension steel strain is its snapping strain
 ($\epsilon_{stu}$). But the values of snapping strains for steel types
@@ -440,26 +460,30 @@ axial load of either compressive or tensile nature can be analysed for
 its full range of variation of axial load from
 $+P_u (compression) to -P_u (tension)$ with pure bending case $(P_u=0)$
 following as a transition. The design assumptions for a section under
-bending and axial load are portrayed in Fig. 1.6, by the various strain
+bending and axial load are portrayed in \fig
+\ref{fig:SectoinUnderBendingandAxialLoad}, by the various strain
 diagrams applicable for the full range of variation of $P_u$.
-
+%======================== Figure 6 ================================%
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{images/various.png}
 \caption{Various strain diagrams applicable for a section under bending and axial load.}
-\label{fig:various}
+\label{fig:SectoinUnderBendingandAxialLoad}
 \end{figure}
-
+%=========================End figure ============================%
 For a section under bending combined with axial compression, clause
 39.1 (b) of the Code gives the equation,
 \begin{equation}
 \epsilon_1=0.0035-0.75\epsilon_2
+\label{BendingwithAxial}
 \end{equation}
 which represents various strain diagrams given in the line rotating about
-the point A (\fig 1.6). On a similar analogy, the line rotating about the
-point B (\fig 1.6) gives different strain diagrams applicable for a
-section under bending combined with axial tension, which can be got from
-the following relations for different types of reinforcing steel.
+the point A (\fig \ref{fig:SectoinUnderBendingandAxialLoad}).
+On a similar analogy, the line rotating about the
+point B (\fig \ref{fig:SectoinUnderBendingandAxialLoad}) gives different
+strain diagrams applicable for a section under bending combined with
+axial tension, which can be got from the following relations for
+different types of reinforcing steel.
 
 \begin{center}
 For $\fetwofivezero,\epsilon_{st}=0.0020-5.45\epsilon_1$\\
@@ -469,15 +493,16 @@ For $\fefivezerozero,\epsilon_{st}=0.012-1.86\epsilon_1$
 
 The above relationships have been derived by using the principles of
 similar triangles along with the values of $\epsilon_{st,max}, \epsilon_{std}$ for
-various types of steel given in \tablem 1.2. Figure 1.6 gives by
-similar triangles,
+various types of steel given in \tablem 1.2. \fig
+\ref{fig:SectoinUnderBendingandAxialLoad} gives by similar triangles,
 
 \begin{equation}
 n=\frac{\epsilon_1}{\epsilon_1+\epsilon_{st}}
+\label{TypesofSteel}
 \end{equation}
-
-$n_b (balanced), n_{max}, n_{min}$ are calculated by the \eqn 1.26 and are
-given in \tablem 1.2 for ready reference. Balanced failure is given by
+$n_b (balanced), n_{max}, n_{min}$ are calculated by the
+\eqn \ref{TypesofSteel} and are given in \tablem 1.2 for ready reference.
+Balanced failure is given by
 $\epsilon_1 = 0.0035, \epsilon_{st} =\epsilon_{sy}$ ($\epsilon_{sy}$
 corresponds to a steel strain when $f_{st} = 0.87 f_y$, to be read from
 stress-strain curves for steel given in \fig 23 of the
@@ -492,32 +517,32 @@ strength is to be entirely neglected and only steel areas are to be
 utilised to resist external forces. When $n>n_b$, compression failure
 is indicated where concrete is crushed $(\epsilon_1= 0.002 \text{ to } 0.0035)$,
 but tension steel is not yield, it may rather be in compression as well.
-\fig 1.7 shows typical interaction curves for a section under bending
+\fig \ref{fig:Interactioncurves} shows typical interaction curves for a section under bending
 and axial load with different Regions 1 to 5 marked therein, which are
-also shown in \fig 1.6.The region-wise load moment combinations with
-corresponding strain values are summarised below.
-
+also shown in \fig \ref{fig:SectoinUnderBendingandAxialLoad}.
+The region-wise load moment combinations with corresponding strain
+values are summarised below.
+%=============================== Figure 7============================%
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{images/exported.png}
 \caption{Interaction curves for a section under bending and axial load.}
-\label{fig:exported}
+\label{fig:Interactioncurves}
 \end{figure}
+%=========================== End  Figure ==========================%
 
 Region 1. Whole section under compression, design governed by compression
 failure with $\epsilon_1=0.002 \text{ to } 0.0035$, $\epsilon_2=0
 \text{ to } 0.002 \text{ and } n=\infty \text{ to } D/d.$
-Applicable for axial compression with or without small moment.\\
+Applicable for axial compression with or without small moment.
 
 Region 2. Section partly under compression and partly under tension,
 design governed by compression failure with
 $\epsilon_1 = 0.0035 \text{ (constant) and } \epsilon_{st} < \epsilon_{sy}
-\text{ and } n = D/d \text{ to } n_b.$ Applicable for axial compression with large
-moment.
+\text{ and } n = D/d \text{ to } n_b.$ Applicable for axial compression with large moment.
 
 Region 3. Section partly under compression and partly under tension,
 design governed , by tension failure modiﬁed for ductility with
-
 $$\epsilon_1 = 0.0035 \text{ (constant)}$$
 $$\epsilon_{st} =\epsilon_{sy} \text{ to } \epsilon_{std}
 \text{ (theoretical)}$$
@@ -527,7 +552,7 @@ $$>n_{max} \text{ (theoretical)}$$
 But $$n=n_{max} \text{ (assumed constant for ductility)}$$
 
 This is a region when the value of X is not ﬁxed.For a ﬁxed arrangement
-of steelin section,this region reduces to a straight line. \\
+of steelin section,this region reduces to a straight line. 
 
 Region 4. Section partly under compression and partly under tension,design
 governed by tension failure with concrete fully crushed with,
