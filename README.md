@@ -1,22 +1,26 @@
 # DesignAids
 
 Requirements:
------------------------------
-    1) Install LaTex
+----------------------------
+    1) Install LaTeX
     2) Install SageMath
-    3) Configure LaTex with Sagemath
+    3) Configure LaTeX with Sagemath
     4) Install biber
 
 
 Installation of Requirements:
 -----------------------------
-    1) SageMath
+    1) LaTeX
+
+       sudo apt-get install texlive-full
+
+    2) SageMath
 
        sudo apt-add-repository -y ppa:aims/sagemath
        sudo apt-get update
        sudo apt-get install sagemath-upstream-binary
     
-    2) biber
+    3) biber
        
        sudo apt-get install biber
    
