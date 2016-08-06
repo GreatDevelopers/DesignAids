@@ -4,7 +4,7 @@ Requirements:
 ----------------------------
     1) Install LaTeX
     2) Install SageMath
-    3) Configure LaTeX with Sagemath
+    3) Configure LaTeX with SageMath
     4) Install biber
 
 
