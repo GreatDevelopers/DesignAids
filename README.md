@@ -27,10 +27,10 @@ Installation of Requirements:
 
 To run:
 -----------------------------
-    1)pdflatex main.tex
-    2)biber main
-    3)sage main.sagetex.sage
-    4)pdflatex main.tex
+    1) pdflatex main.tex
+    2) biber main
+    3) sage main.sagetex.sage
+    4) pdflatex main.tex
 
 To create pdf from make:
 -----------------------------
