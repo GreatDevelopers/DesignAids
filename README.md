@@ -20,7 +20,12 @@ Installation of Requirements:
        sudo apt-get update
        sudo apt-get install sagemath-upstream-binary
     
-    3) biber
+    3) Configure LaTeX with SageMath
+      
+       http://www.hpc.wm.edu/sciclone/documentation/software/math/sage-5.1/html/en/installation/sagetex.html
+       https://amrit3701.wordpress.com/2015/07/19/configure-sagetex-sty-or-make-sagetex-known-to-tex/            
+                                                 
+    4) biber
        
        sudo apt-get install biber
    
