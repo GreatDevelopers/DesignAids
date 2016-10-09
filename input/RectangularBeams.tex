@@ -1,0 +1,282 @@
+
+\chapter{Rectangular Beams}
+\section{Introduction}Ductile reinforced concrete beams under ultimate loads fail by tension failure modes with
+concrete fully or partially crushed. These modes of failure fall in the regions 3, 4 and 4A
+(Figs. 1.6 and 1.7 of Chapter 1). When moment at a section is small, only tension reinforcement
+will sufﬁce. But when compressive force in concrete compression zone is more than the concrete
+capacity, compression steel will be required at the compression face of section. Thus reinforced
+concrete beams may have two types of sections—singly or doubly reinforced sections.
+
+\section{Singly Reinforced Rectangular Section}
+When the position of neutral axis is such that xu, min S xu S. xu, max (Fig. 2.1), the concrete
+compression zone gets subjected to the full concrete stress diagram as given by Fig. 21 of the
+Code. The equilibrium of the section (Fig. 2.1) gives,
+\begin{equation}
+T=Cw
+\label{1}
+\end{equation}
+\begin{equation}
+Mu=Cw.(d-0.42x_u)
+\label{2}
+\end{equation}
+with
+\begin{equation*}
+\hspace{2cm} T=A_st \times 0.87f_y
+\label{3}
+\end{equation*}
+\begin{equation*}
+C_w=0.36f_ck\hspace{0.1cm}.\hspace{0.1cm} b\hspace{0.1cm} .\hspace{0.1cm} x_u
+\label{4}
+\end{equation*}
+and introducing two non-dimensional parameters,
+\begin{equation*}
+\mu=\frac {A_st}{bd} \times 0.87\frac {f_y}{f_ck}
+\end{equation*}
+\begin{equation*}
+k=\frac{M_u}{f_ckbd^2}
+\end{equation*}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{images/ch2-1.png}
+\caption{Singly reinforced rectangular section with concrete fully crushed at collapse.}
+\label{fig:Singly reinforced section}
+\end{figure}
+%---------------------------------------------------------------------------------------
+\newpage
+Equations (2.1) and (2.2) give, on simplification,
+\begin{equation}
+\mu = 0.36n
+\end{equation}
+\begin{equation}
+k=\mu(1-0.42n)
+\end{equation}
+These equations are the same as given by the Code in its Appendix G-1.1. The Code has,
+however, not made clear that these equations do not apply for low values of n, When the tension
+steel strain exceeds the maximum tension steel strain, for the simple reason that the Code
+has made no stipulation in this regard. The Code has instead given the provision of the
+minimum area of tension reinforcement,
+\begin{equation*}
+\frac{A_s(min)}{bd} = \frac{0.85}{f_y}
+\end{equation*}
+which will greatly limit the tension steel strain and thereby restrict cracking and spalling of
+concrete of tension zone.\\
+When the position of neutral axis is such that O S xu S xu, min, the concrete compression
+zone is subjected to only a part of the standard concrete stress diagram given by the Code and
+the above expressions are not valid for this range. The conditions of equilibrium of the section
+(Fig. 2.2) give on simpliﬁcation,
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{images/ch2-2.png}
+\caption{Singly reinforced rectangular section with concrete not fully crushed at collapse.}
+\label{fig:Singly reinforced section}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{images/ch2-3.png}
+\caption{Values for non-dimensional parameters ${\alpha}$,${\beta}$ and ${\gamma}$ (Fig.2.2).}
+\label{fig:Values for parameters}
+\end{figure}
+%--------------------------------------------------------------------------------------------
+\newpage
+\begin{equation}
+\mu=\beta.n
+\end{equation}
+\begin{equation}
+k=\mu(1-\gamma.n)
+\end{equation}
+where
+\begin{equation}
+\hspace{2cm} \beta = \frac{C_w}{f_ck\hspace{0.1cm}.\hspace{0.1cm}b\hspace{0.1cm}.\hspace{0.1cm}x_u}
+\end{equation}
+\begin{equation}
+\gamma = \frac{\bar{x}}{x_u}
+\end{equation}
+The concrete stress at the extreme ﬁbre of section (Fig. 2.2) is given by
+\begin{equation}
+f_c = \alpha.f_ck
+\end{equation}
+The non-dimensional parameters on, B, and y can be read from Fig. 2.3, which gives curves for
+these parameters with respect to the concrete compression strain at the extreme ﬁbre of section
+(81) derived simply by rules of Geometry.\\
+Equations (2.5) and (2.6) apply when n ${<}$ ${n_{min}}$ and Eqs. (2.3) and (2.4) apply when ${n_{min}}$ ${\leq}$ n ${\leq}$ ${n_{max}}$.
+When n ${>}$ ${n_{max}}$, the Code prescribes that n = ${n_{max}}$ must be assumed for
+ensuring ductility. With n =${n_{max}}$, equation (2.4) gives the limiting \\
+moment of resistance
+(M u, am) of singly reinforced rectangular section as,
+\begin{equation}
+M_{u,lim} = 0.36 n_{max}(1-0.42n_{max})\hspace{0.1cm}.\hspace{0.1cm}f_ck\hspace{0.1cm}.\hspace{0.1cm}bd^2
+\end{equation}
+\section{Doubly Reinforced Rectangular Section}
+When the applied moment ${M_u}$ is greater than the limiting moment of resistance ${(M_{u,lim})}$
+of a given singly reinforced rectangular section, compression reinforcement is required to be
+provided giving a doubly reinforced section. The equilibrium of the section (Fig. 2.4) gives,
+\begin{equation}
+T = C_w + C_s
+\end{equation}
+\begin{equation}
+M_u = C_w(d-0.42x_{u,max}) + C_s(d-d ')
+\end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{images/ch2-4.png}
+\caption{Doubly reinforced rectangular section.}
+\label{fig: reinforced section}
+\end{figure}
+Introducing an additional non-dimensional parameter,
+\begin{equation*}
+\mu' = \frac{A_{sc}}{bd} \times \frac{f_{sc}}{f_{ck}}
+\end{equation*}
+These equations give, on simplification,
+\begin{equation}
+\mu=0.36n_{max} + \mu'
+\end{equation}
+%-----------------------------------------------------------------------------------------
+\newpage
+\begin{equation}
+k=0.36n_{max}(1-0.42n_{max}) + \mu'(1-\frac{d'}{d})
+\end{equation}
+Value of ${f_{sc}}$ is to be read from Fig. 23 of the Code corresponding to compression steel strain
+($\varepsilon_{sc}$), which is given by (Fig. 2.4),
+
+\begin{equation}
+\varepsilon_{sc} = 0.0035(1-\frac{1}{n_{max}}.\frac{d'}{d})
+\end{equation}
+\section{Design Charts}
+Equations (2.3) to (2.6) are used to develop charts for singly reinforced rectangular
+sections. For an assumed value of n, relevant equations from those given above are used. to
+give values for k and ${\mu}$, which are plotted to give charts 2.1 and 2.2, one each for steel types
+Fe 250 and Fe 415. For doubly reinforced sections, equations (2.13) and (2.14) are used to get
+values for ${\mu}$ and k for an assumed value of ${\mu’}$ and d'/d. These give a series of straight lines for
+k, which depend on d'/d, while the straight line for${\mu’}$is independent of d'/d . Charts 2.1 and 2.2
+give all these curves with Y-Y axis representing n or ${\mu’}$, where n applies for singly reinforced
+sections and ${\mu’}$ for doubly reinforced sections. Values for${f_{sc}}$ are given against values of d'/d in
+each chart for ready use. There is an advantage in plotting curves for singly and doubly
+reinforced sections on the same co-ordinate axes, in that, the (capacity of a singly reinforced
+section need not be specially checked when the applied moment is greater than it. Use of design
+charts is illustrated by the following numerical examples.
+\section{Numerical Examples}
+\textbf{Example 2.1.} Singly Reinforced Rectangular Section (Design)\\
+\textbf{Given :} 
+b = 30 cm, ${f_{ck}}$ = 1.5 kN/cm2\\
+ D = 60 cm, ${f_y}$ = 41.5 kN/cm2\\
+d = 56.25 cm, ${M_u}$  = 170 kNm\\
+This example is taken from Design Aids$^{8}$ (Page 11).\\
+\textbf{Required :}${A_{st}}$\\
+\textbf{Solution:}
+\begin{equation*}
+ k= \frac{170 \times 100}{1.5 \times 30 \times (56.25)^2} =0.119
+\end{equation*}
+Chart 2.2 gives,
+\begin{equation*}
+n=0.40, \mu=0.145
+\end{equation*}
+\begin{equation*}
+A_{st}=\frac{0.145 \times 30 \times 56.25 \times 1.50}{0.87 \times 41.5} = 10.17 cm^2
+\end{equation*}
+\textbf{Example 2.2.} Singly Reinforced Rectangular Section (Investigation).\\
+\textbf{Given :} Same as Ex.2.1 with ${A_{st}}$= 6.40 cm$^{2}$\\
+\textbf{Required :}${M_{u}}$\\
+\textbf{Solution:} 
+\begin{equation*}
+\mu=\frac{6.40 \times 0.87 \times 41.5}{30 \times 56.25 \times 1.5} =0.09
+\end{equation*}
+Chart 2.2 gives,
+\begin{equation*}
+n=0.245, \mu=0.0775
+\end{equation*}
+\begin{equation*}
+M_{u}=0.0775 \times 1.50 \times 30 \times (56.25^2)/100= 110kNm.
+\end{equation*}
+%------------------------------------------------------------------------------
+\newpage
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{images/ch2-5.png}
+\caption{}
+\label{fig:Values for parameters}
+\end{figure}
+%-------------------------------------------------------------------------------
+\newpage
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{images/ch2-6.png}
+\caption{}
+\label{fig:Values for parameters}
+\end{figure}
+%------------------------------------------------------------------------------------
+\newpage
+\textbf{Example 2.3.} Doubly Reinforced Rectangular Section (Design).\\
+\textbf{Given :}  Same as in Ex. 2.1 but with ${M_{u}}$= 320 kNm and d’ = 3.75 cm. This example is taken
+from Design Aids$^{8}$(Page 13).\\
+\textbf{Required :} ${A_{st}}$, ${A_{sc}}$
+\textbf{Solution:} 
+\begin{equation*}
+k=\frac{320 \times 100}{1.50 \times 30 \times (56.25)^2}=0.225
+\end{equation*}
+Chart 2.2 gives for
+\begin{equation*}
+\frac{d'}{d}=\frac{3.75}{56.25}=0.067 
+\end{equation*}
+\begin{equation*}
+\mu'=0.0925.\mu=0.265
+\end{equation*}
+\begin{equation*}
+A_{st}=\frac{0.265 \times 30\times 56.25 \times 1.50}{0.87 \times 41.5}=18.58cm^2
+\end{equation*}
+For
+\begin{equation*}
+\frac{d'}{d}=0.067
+\end{equation*}
+Chart 2.2 gives by interpolation
+\begin{equation*}
+f_{sc}=35.48kN/cm^2
+\end{equation*}
+\begin{equation*}
+A_{sc}=\frac{0.0925 \times 30 \times 56.25 \times 1.50}{35.48}=6.60cm^2
+\end{equation*}
+\textbf{Example 2.3.} Doubly Reinforced Rectangular Section (Implementation).\\
+\textbf{Given :}  Same as in Ex. 2.1 but with ${A_{sc}}$=4.0cm$^{2}$
+\begin{equation*}
+A_{st}=18.0cm^2 \hspace{0.1cm}and\hspace{0.1cm} d'=3.75
+\end{equation*}
+\textbf{Required :}${M_{u}}$\\
+\textbf{Solution:} For
+\begin{equation*}
+\frac{d'}{d}=0.067,Chart 2.2 gives,
+\end{equation*}
+\begin{equation*}
+f_{sc}=35.48kN/cm^2
+\end{equation*}
+\begin{equation*}
+\mu'=\frac{4.0 \times 35.48}{30 \times 56.25 \times 1.50}=0.056
+\end{equation*}
+Chart 2.2 gives for $\frac{d'}{d}$=0.067
+\begin{equation*}
+k=0.19
+\end{equation*}
+\begin{equation*}
+M_u= 0.19 \times 1.50 \times 30 \times (56.25)^2/100=270kNm. 
+\end{equation*}
+A check on the adequacy of tension steel area is further required. For $\mu'$ = 0.056, Chart 2.2
+gives
+\begin{equation*}
+\mu=0.23
+A_{st}(required)=\frac{0.23 \times 30 \times 56.25 \times 1.50}{0.87 \times 41.5}=16.12cm^2
+\end{equation*}
+which is less than the provided ${A_{sc}}$= 18.0 cm$^{2}$\\
+The capacity of the given section is, therefore, correctly computed to be 270 kNm.
+%-----------------------------------------------------------------------------------------
+\newpage
+\section{Conclusion}
+Design charts have been furnished for singly and doubly reinforced concrete rectangular
+beams which are independent of concrete quality and are based on non-dimensional
+parameters. These charts are quite concise and incorporate the modiﬁcations necessary for
+low values of n. Further, these charts can be used with equal ease for design as well as
+investigation of a given singly or doubly reinforced rectangular section.
+
+
+
+
+
+
