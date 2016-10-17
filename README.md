@@ -48,3 +48,29 @@ After creating pdf you can run the below command to view pdf:
 Clean all the unnecessary file which are made by make:
 -----------------------------
     make clean
+
+Documentation:
+-----------------------------
+This Docmentation include procedure of adding new chapter in this
+project. To add new chapter, just create new .tex file with the name of
+chapter and place it in input/ folder, after that call it in main.tex. 
+Macros are defined in usepackage.tex, use them to write Fig., Equation,
+Chart, Table, Fe250, Fe415, Fe500, Given:, Requried:, Solution: etc.
+There are also macros for various units such as kN, kNm, mm etc., use them to
+write units instead of manual typing. Example environment is also defined
+in usepackage.tex, use it to write Numeric example in chapters.
+   
+Style of writing Figure, Equation, Chart, Table etc., must be consistant
+for whole book. It should be Fig(1.1), Equation(1.1), Chart(1.1),
+Table(1.1) etc. And Equation no., Chart no., Table no., Fig no. should
+come by referencing the label.
+
+Table should be created from .csv file. To create table, write csv file
+and save it with abbrivation of chapter's name inside the input/csv.    
+
+To add bibliography, there is only one DesignAids.bib file for whole
+book, citations will come from this .bib file. You can add new entries in
+.bib if you needed. Citation such as \citetitle{is4561964} and
+\citetitle{is4562000} are coming from DesignAids.bib. Use
+\citetitle{is4561964} and \citetitle{is4562000} for oldCode and newCode
+(for Code also) respectively.       
