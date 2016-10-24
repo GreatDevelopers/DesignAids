@@ -28,6 +28,10 @@ Installation of Requirements:
     4) biber
        
        sudo apt-get install biber
+
+Run below script to install requirements:
+-----------------------------
+    ./requirements.sh 
    
 
 To run:
@@ -51,8 +55,8 @@ Clean all the unnecessary file which are made by make:
 
 Documentation:
 -----------------------------
-This Docmentation include procedure of adding new chapter in this
-project. To add new chapter, just create new .tex file with the name of
+This Documentation include procedure of adding new chapter in this
+project. To add a new chapter, just create new .tex file with the name of
 chapter and place it in input/ folder, after that call it in main.tex. 
 Macros are defined in usepackage.tex, use them to write Fig., Equation,
 Chart, Table, Fe250, Fe415, Fe500, Given:, Requried:, Solution: etc.
@@ -61,7 +65,7 @@ write units instead of manual typing. Example environment is also defined
 in usepackage.tex, use it to write Numeric example in chapters.
    
 Style of writing Figure, Equation, Chart, Table etc., must be consistant
-for whole book. It should be Fig(1.1), Equation(1.1), Chart(1.1),
+for the whole book. It should be Fig(1.1), Equation(1.1), Chart(1.1),
 Table(1.1) etc. And Equation no., Chart no., Table no., Fig no. should
 come by referencing the label.
 
@@ -70,7 +74,7 @@ and save it with abbrivation of chapter's name inside the input/csv.
 
 To add bibliography, there is only one DesignAids.bib file for whole
 book, citations will come from this .bib file. You can add new entries in
-.bib if you needed. Citation such as \citetitle{is4561964} and
-\citetitle{is4562000} are coming from DesignAids.bib. Use
+.bib if you need. Citations such as \citetitle{is4561964} and
+\citetitle{is4562000} come from DesignAids.bib. Use
 \citetitle{is4561964} and \citetitle{is4562000} for oldCode and newCode
 (for Code also) respectively.       
