@@ -28,7 +28,9 @@ Installation of Requirements:
     4) biber
        
        sudo apt-get install biber
-   
+
+References: [LaTeX](https://www.latex-project.org), [SageMath](http://www.sagemath.org/), [biber](https://www.ctan.org/pkg/biber)   
+
 
 To run:
 -----------------------------
